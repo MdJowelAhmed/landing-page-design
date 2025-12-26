@@ -4,28 +4,30 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { FaAnglesDown } from "react-icons/fa6";
+
 
 export default function HeroSection() {
     return (
-        <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-[#F8F6F3]">
+        <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-[]">
             {/* Decorative top bar */}
-            <div className="absolute top-0 right-0 w-1/2 h-2 bg-gradient-to-r from-[#0D9488] via-[#14B8A6] to-[#EA580C]" />
+            <div className="absolute top-0 right-0 w-1/2 h-2 " />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
                     {/* Left Content */}
                     <motion.div
-                        initial={{ opacity: 0, x: -30 }}
+                        initial={{ opacity: 0, x: 30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-left order-1 "
+                        className="text-left order-2 "
 
                     >
                         {/* Main Heading */}
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl  tracking-tight leading-tight">
                             <span className="text-[#1E293B]">Your Workforce</span>
                             <br />
-                            <span className="text-[#0D9488]">Your Control</span>
+                            <span className="text-[#0D9488] font-bold ml-10">Your Control</span>
                             <br />
                             <span className="text-[#1E293B]">Perfected Attendance</span>
                         </h1>
@@ -39,14 +41,10 @@ export default function HeroSection() {
                         >
                             {/* User Avatars */}
                             <div className="flex -space-x-3">
-                                {[1, 2, 3, 4].map((i) => (
-                                    <div
-                                        key={i}
-                                        className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold"
-                                    >
-                                        {String.fromCharCode(64 + i)}
-                                    </div>
-                                ))}
+                                <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (16).png" alt="Image" height={100} width={100} />
+                                <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (17).png" alt="Image" height={100} width={100} />
+                                <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (21).png" alt="Image" height={100} width={100} />
+                                <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (22).png" alt="Image" height={100} width={100} />
                             </div>
                             <Link href="/contact">
                                 <Button className="bg-[#0D9488] hover:bg-[#0F766E] text-white rounded-full px-8 py-6 text-base shadow-lg shadow-teal-500/20">
@@ -94,27 +92,28 @@ export default function HeroSection() {
                                 animate={{ y: [0, 5, 0] }}
                                 transition={{ duration: 1.5, repeat: Infinity }}
                             >
-                                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                {/* <svg className="w-8 h-8" fill="none" viewBox="0 0 2 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                </svg>
+                                </svg> */}
+                                <FaAnglesDown className="w-8 h-8" />
                             </motion.div>
                         </motion.div>
                     </motion.div>
 
                     {/* Right Content - Phone Mockup */}
                     <motion.div
-                        initial={{ opacity: 0, x: 30 }}
+                        initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="relative flex justify-center lg:justify-end order-2 "
+                        className="relative flex justify-center lg:justify-start order-1 "
                     >
                         {/* Phone Mockup */}
                         <div className="relative">
                             {/* Orange Phone Frame */}
-                            <div className="relative w-64 sm:w-[450px] h-[550px] sm:h-[600px] ">
-                                <div className="w-full h-full bg-white rounded-[32px] overflow-hidden">
+                            <div className="relative w-[400px] sm:w-[450px] h-[550px] sm:h-[550px] lg:h-[600px]">
+                                <div className="w-full h-full rounded-[32px] overflow-hidden">
                                     {/* Phone Screen Content */}
-                                    <Image src="/hero.png" alt="Phone Screen" fill className="object-cover" />
+                                    <Image src="/hero.png" alt="Phone Screen" fill className="object-cover h-[550px] sm:h-[550px] lg:h-[600px]" />
                                 </div>
                             </div>
                         </div>
@@ -126,10 +125,10 @@ export default function HeroSection() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.7 }}
-                    className="mt-16 text-center lg:text-left max-w-4xl"
+                    className="mt-16 text-center lg:text-right lg:ml-auto max-w-4xl"
                 >
                     <p className="text-sm text-[#64748B] leading-relaxed">
-                        Take command of your institution&apos;s attendance. The Duty Hour App provides business admins with a powerful HRM dashboard, enabled by geo-fenced and Wi-Fi-verified check-ins. Ensure every minute counts, manage employees effortlessly, and secure your operations with unparalleled accuracy.
+                        Take command of your institution's attendance. The Duty Hour App provides business admins with a powerful HRM dashboard, enabled by geo-fenced and Wi-Fi-verified check-ins. Ensure every minute counts, manage employees effortlessly, and secure your operations with unparalleled accuracy.
                     </p>
                 </motion.div>
             </div>
