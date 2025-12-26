@@ -93,34 +93,20 @@ export default function FeaturesSection() {
                         <motion.div
                             key={feature.title}
                             variants={itemVariants}
-                            className={`group relative p-6 rounded-2xl transition-all duration-300 ${feature.highlighted
-                                    ? "bg-[#0D9488] text-white shadow-xl shadow-teal-500/20"
-                                    : "bg-white border border-gray-100 hover:border-[#0D9488]/30 hover:shadow-lg"
-                                }`}
+                            className="group relative p-6 rounded-2xl bg-white border border-gray-100 hover:bg-[#0D9488] hover:border-[#0D9488] hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-500 ease-in-out"
                         >
                             {/* Icon */}
-                            <div
-                                className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 ${feature.highlighted
-                                        ? "bg-white/20"
-                                        : "bg-[#F8F6F3]"
-                                    }`}
-                            >
-                                <div className={feature.highlighted ? "text-white" : "text-[#0D9488]"}>
+                            <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 bg-[#F8F6F3] group-hover:bg-white/20 transition-all duration-500 ease-in-out">
+                                <div className="text-[#0D9488] group-hover:text-white transition-colors duration-500 ease-in-out">
                                     {feature.icon}
                                 </div>
                             </div>
 
                             {/* Content */}
-                            <h3
-                                className={`text-lg font-semibold mb-2 ${feature.highlighted ? "text-white" : "text-[#1E293B]"
-                                    }`}
-                            >
+                            <h3 className="text-lg font-semibold mb-2 text-[#1E293B] group-hover:text-white transition-colors duration-500 ease-in-out">
                                 {feature.title}
                             </h3>
-                            <p
-                                className={`text-sm leading-relaxed ${feature.highlighted ? "text-white/90" : "text-[#64748B]"
-                                    }`}
-                            >
+                            <p className="text-sm leading-relaxed text-[#64748B] group-hover:text-white/90 transition-colors duration-500 ease-in-out">
                                 {feature.description}
                             </p>
                         </motion.div>

@@ -33,7 +33,7 @@ export default function HomeFeatureSection() {
                             </div>
                         </div>
 
-                        <div className="flex justify-between w-[550px] items-center ml-20  gap-10">
+                        <div className="flex justify-between w-[570px] items-center ml-20  gap-10">
                             {/* Bottom Stat */}
                             <div className="flex flex-col">
                                 <h3 className="text-4xl font-bold text-foreground">42.0k+</h3>
@@ -44,7 +44,7 @@ export default function HomeFeatureSection() {
                             <motion.p
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
-                                className=" text-sm leading-relaxed max-w-lg mb-8"
+                                className=" text-sm leading-relaxed max-w-2xl mb-8"
                             >
                                 Your subscribed HRM dashboard is the command center for your business.
                                 Easily define your institution&apos;s geo-fenced location and Wi-Fi credentials,
