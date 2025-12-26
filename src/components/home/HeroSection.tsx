@@ -14,7 +14,7 @@ export default function HeroSection() {
             <div className="absolute top-0 right-0 w-1/2 h-2 " />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8">
                     {/* Left Content */}
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
@@ -32,72 +32,86 @@ export default function HeroSection() {
                             <span className="text-[#1E293B]">Perfected Attendance</span>
                         </h1>
 
-                        {/* CTA Section */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.3 }}
-                            className="mt-8 flex flex-wrap items-center gap-4"
-                        >
-                            {/* User Avatars */}
-                            <div className="flex -space-x-3">
-                                <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (16).png" alt="Image" height={100} width={100} />
-                                <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (17).png" alt="Image" height={100} width={100} />
-                                <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (21).png" alt="Image" height={100} width={100} />
-                                <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (22).png" alt="Image" height={100} width={100} />
-                            </div>
-                            <Link href="/contact">
-                                <Button className="bg-[#0D9488] hover:bg-[#0F766E] text-white rounded-full px-8 py-6 text-base shadow-lg shadow-teal-500/20">
-                                    Start Your Free Trial
-                                </Button>
-                            </Link>
-                        </motion.div>
+                        <div className="flex justify-between items-center gap-5">
+                            {/* CTA Section */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.3 }}
+                                className="mt-8 flex flex-wrap items-center gap-4 bg-[#FFFFFF94] p-4 rounded-md shadow-lg "
+                            >
+                                {/* User Avatars */}
+                                <div className="flex -space-x-3">
+                                    <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (16).png" alt="Image" height={100} width={100} />
+                                    <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (17).png" alt="Image" height={100} width={100} />
+                                    <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (21).png" alt="Image" height={100} width={100} />
+                                    <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (22).png" alt="Image" height={100} width={100} />
+                                </div>
+                                <Link href="/contact">
+                                    <Button className="bg-[#0D9488] hover:bg-[#0F766E] text-white rounded-lg px-8 py-6 text-base shadow-lg shadow-teal-500/20">
+                                        Start Your Free Trial
+                                    </Button>
+                                </Link>
+                            </motion.div>
 
-                        {/* Subheading */}
-                        <motion.p
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.4 }}
-                            className="mt-6 text-sm text-[#64748B]"
-                        >
-                            Reliable Data. Verified Accuracy.
-                        </motion.p>
+                            {/* Subheading */}
+                            {/* <motion.p
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.4 }}
+                                className="mt-6 text-sm text-[#64748B]"
+                            >
+                                Reliable Data. Verified Accuracy.
+                            </motion.p> */}
+
+
+
+                            <div className="text-center">
+                                <div className="text-3xl font-bold text-[#1E293B]">34.0k+</div>
+                                <div className="text-xs text-[#64748B]">Attendance Records Processed</div>
+                            </div>
+                        </div>
+
+
 
                         {/* Stats */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
-                            className="mt-8 flex flex-wrap gap-8"
+                            className="mt-8 flex flex-wrap gap-8 justify-end"
                         >
-                            <div>
-                                <div className="text-3xl font-bold text-[#1E293B]">34.0k+</div>
-                                <div className="text-xs text-[#64748B]">Attendance Records Processed</div>
-                            </div>
-                            <div>
-                                <div className="text-3xl font-bold text-[#1E293B]">12.0k+</div>
-                                <div className="text-xs text-[#64748B]">Employees Managed</div>
-                            </div>
+
+                            <div
+                                className="w-[350px] flex justify-between items-center">
+                                <div className="text-center">
+                                    <div className="text-3xl font-bold text-[#1E293B]">12.0k+</div>
+                                    <div className="text-xs text-[#64748B]">Employees Managed</div>
+                                </div>
+
+
+                                {/* Learn More */}
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ duration: 0.5, delay: 0.6 }}
+                                    className=" gap-2 text-[#64748B] cursor-pointer hover:text-[#0D9488] transition-colors"
+                                >
+
+                                    <motion.div
+                                        animate={{ y: [0, 5, 0] }}
+                                        transition={{ duration: 1.5, repeat: Infinity }}
+                                        className="bg-[#fff] rounded-full p-5 mb-5"
+                                    >
+
+                                        <FaAnglesDown className="w-8 h-8" />
+                                    </motion.div>
+
+                                    <span className="text-sm font-medium mt-4">Learn More</span>
+                                </motion.div></div>
                         </motion.div>
 
-                        {/* Learn More */}
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.5, delay: 0.6 }}
-                            className="mt-8 flex items-center gap-2 text-[#64748B] cursor-pointer hover:text-[#0D9488] transition-colors"
-                        >
-                            <span className="text-sm font-medium">Learn More</span>
-                            <motion.div
-                                animate={{ y: [0, 5, 0] }}
-                                transition={{ duration: 1.5, repeat: Infinity }}
-                            >
-                                {/* <svg className="w-8 h-8" fill="none" viewBox="0 0 2 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                </svg> */}
-                                <FaAnglesDown className="w-8 h-8" />
-                            </motion.div>
-                        </motion.div>
+
                     </motion.div>
 
                     {/* Right Content - Phone Mockup */}
@@ -116,6 +130,12 @@ export default function HeroSection() {
                                     <Image src="/hero.png" alt="Phone Screen" fill className="object-cover h-[550px] sm:h-[550px] lg:h-[600px]" />
                                 </div>
                             </div>
+
+                            <div className="mt-16 text-center lg:text-left lg:ml-auto max-w-4xl">
+                                <p className="text-sm text-[#64748B] leading-relaxed">
+                                    Take command of your institution's attendance. The Duty Hour App provides business admins with a powerful HRM dashboard, enabled by geo-fenced and Wi-Fi-verified check-ins. Ensure every minute counts, manage employees effortlessly, and secure your operations with unparalleled accuracy.
+                                </p>
+                            </div>
                         </div>
                     </motion.div>
                 </div>
@@ -125,11 +145,9 @@ export default function HeroSection() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.7 }}
-                    className="mt-16 text-center lg:text-right lg:ml-auto max-w-4xl"
+
                 >
-                    <p className="text-sm text-[#64748B] leading-relaxed">
-                        Take command of your institution's attendance. The Duty Hour App provides business admins with a powerful HRM dashboard, enabled by geo-fenced and Wi-Fi-verified check-ins. Ensure every minute counts, manage employees effortlessly, and secure your operations with unparalleled accuracy.
-                    </p>
+
                 </motion.div>
             </div>
         </section>
