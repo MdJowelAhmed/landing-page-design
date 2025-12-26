@@ -13,11 +13,11 @@ export default function HomeFeatureSection() {
                 <div className="grid lg:grid-cols-12 gap-8 ">
 
                     {/* Left Column - Stats & Text */}
-                    <div className="lg:col-span-3 relative z-20 space-y-12">
+                    <div className="lg:col-span-3 relative z-20 space-y-6">
 
 
                         {/* Main Heading Group */}
-                        <div className="space-y-4 flex flex-col items-center mt-10">
+                        <div className=" flex flex-col items-center mt-10">
                             <h2 className="text-3xl font-medium text-foreground">Total Control</h2>
 
                         </div>
@@ -27,29 +27,31 @@ export default function HomeFeatureSection() {
                                 <h3 className="text-4xl font-bold text-foreground">12.0k+</h3>
                                 <p className="text-muted-foreground text-sm">Employees Managed</p>
                             </div>
-                           <div className="flex flex-col gap-4">
-                             <h2 className="text-2xl font-bold text-teal-600">Instant Setup</h2>
-                            <h2 className="text-2xl font-bold text-foreground">Zero Attendance Fraud</h2>
-                           </div>
+                            <div className="flex flex-col gap-2">
+                                <h2 className="text-2xl font-bold text-teal-600">Instant Setup</h2>
+                                <h2 className="text-2xl font-bold text-foreground">Zero Attendance Fraud</h2>
+                            </div>
                         </div>
 
-                        {/* Bottom Stat */}
-                        <div className="flex flex-col">
-                            <h3 className="text-4xl font-bold text-foreground">42.0k+</h3>
-                            <p className="text-muted-foreground text-sm">Employee Overview</p>
-                        </div>
+                        <div className="flex justify-between w-[550px] items-center ml-20  gap-10">
+                            {/* Bottom Stat */}
+                            <div className="flex flex-col">
+                                <h3 className="text-4xl font-bold text-foreground">42.0k+</h3>
+                                <p className="text-muted-foreground text-sm">Employee Overview</p>
+                            </div>
 
-                        {/* Text Content inside Dark Area */}
-                        <motion.p
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            className="text-gray-300 text-sm leading-relaxed max-w-lg mb-8"
-                        >
-                            Your subscribed HRM dashboard is the command center for your business.
-                            Easily define your institution&apos;s geo-fenced location and Wi-Fi credentials,
-                            onboard employees, and manage subscription packages. Gain immediate access
-                            to highly accurate, verified attendance data, ensuring payroll integrity.
-                        </motion.p>
+                            {/* Text Content inside Dark Area */}
+                            <motion.p
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                className=" text-sm leading-relaxed max-w-lg mb-8"
+                            >
+                                Your subscribed HRM dashboard is the command center for your business.
+                                Easily define your institution&apos;s geo-fenced location and Wi-Fi credentials,
+                                onboard employees, and manage subscription packages. Gain immediate access
+                                to highly accurate, verified attendance data, ensuring payroll integrity.
+                            </motion.p>
+                        </div>
                     </div>
 
                     {/* Right Column - Dashboard & Dark Background */}
@@ -62,17 +64,18 @@ export default function HomeFeatureSection() {
 
                             {/* Dashboard Image Mockup */}
                             <Image src="/assets/dashboard.png" alt="Dashboard" width={800} height={400} />
-                        </div>
+                            {/* CTA Button "Cutout" */}
 
-                        {/* CTA Button "Cutout" */}
-                        <div className="absolute -bottom-12 right-12 md:right-auto md:-right-12 bg-background p-6 rounded-tr-[2rem] z-20">
                             <Button
                                 size="lg"
-                                className="bg-[#388E96] hover:bg-[#2C7A82] text-white px-8 h-14 text-lg rounded-xl shadow-lg"
+                                className="bg-[#388E96] hover:bg-[#2C7A82] text-white px-5 h-12 text-lg rounded-lg shadow-lg absolute bottom-12 right-12 md:right-auto md:-right-2"
                             >
                                 Start Your Free Trial
                             </Button>
+                        
                         </div>
+
+                        
                     </div>
                 </div>
             </div>
