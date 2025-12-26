@@ -24,24 +24,24 @@ export default function HeroSection() {
 
                     >
                         {/* Main Heading */}
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl  tracking-tight leading-tight">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl  tracking-tight leading-tight lg:mb-16">
                             <span className="text-[#1E293B]">Your Workforce</span>
                             <br />
-                            <span className="text-[#0D9488] font-bold ml-10">Your Control</span>
+                            <span className="text-[#0D9488] font-bold ml-10 lg:ml-16">Your Control</span>
                             <br />
                             <span className="text-[#1E293B]">Perfected Attendance</span>
                         </h1>
 
-                        <div className="flex justify-between items-center gap-5">
+                        <div className="flex justify-between items-center gap-5 ">
                             {/* CTA Section */}
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.3 }}
-                                className="mt-8 flex flex-wrap items-center gap-4 bg-[#FFFFFF94] p-4 rounded-md shadow-lg "
+                                className="mt-8 flex flex-wrap items-center gap-4 bg-[#FFFFFF94] p-4 py-6 rounded-md shadow-lg "
                             >
                                 {/* User Avatars */}
-                                <div className="flex -space-x-3">
+                                <div className="flex -space-x-3 ">
                                     <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (16).png" alt="Image" height={100} width={100} />
                                     <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (17).png" alt="Image" height={100} width={100} />
                                     <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (21).png" alt="Image" height={100} width={100} />
@@ -127,15 +127,12 @@ export default function HeroSection() {
                             <div className="relative w-[400px] sm:w-[450px] h-[550px] sm:h-[550px] lg:h-[600px]">
                                 <div className="w-full h-full rounded-[32px] overflow-hidden">
                                     {/* Phone Screen Content */}
-                                    <Image src="/hero.png" alt="Phone Screen" fill className="object-cover h-[550px] sm:h-[550px] lg:h-[600px]" />
+                                    <Image src="/hero.png" alt="Phone Screen" fill
+                                    className="object-cover h-[550px] sm:h-[550px] lg:h-[500px]" />
                                 </div>
                             </div>
 
-                            <div className="mt-16 text-center lg:text-left lg:ml-auto max-w-4xl">
-                                <p className="text-sm text-[#64748B] leading-relaxed">
-                                    Take command of your institution's attendance. The Duty Hour App provides business admins with a powerful HRM dashboard, enabled by geo-fenced and Wi-Fi-verified check-ins. Ensure every minute counts, manage employees effortlessly, and secure your operations with unparalleled accuracy.
-                                </p>
-                            </div>
+                          
                         </div>
                     </motion.div>
                 </div>
@@ -147,7 +144,11 @@ export default function HeroSection() {
                     transition={{ duration: 0.5, delay: 0.7 }}
 
                 >
-
+  <div className="mt-10 text-center lg:text-left  max-w-4xl">
+                                <p className="text-sm text-[#64748B] leading-relaxed">
+                                    Take command of your institution's attendance. The Duty Hour App provides business admins with a powerful HRM dashboard, enabled by geo-fenced and Wi-Fi-verified check-ins. Ensure every minute counts, manage employees effortlessly, and secure your operations with unparalleled accuracy.
+                                </p>
+                            </div>
                 </motion.div>
             </div>
         </section>
