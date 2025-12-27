@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import PrecisionAttendance from "./PrecisionAttendance";
 
 const validationSteps = [
     {
@@ -49,24 +50,7 @@ export default function ServicesContent() {
     return (
         <>
             {/* Hero Section */}
-            <section className="py-16 sm:py-20 relative bg-gradient-to-b from-background to-background">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                        className="text-center"
-                    >
-                        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
-                            How Duty Hour Works
-                        </h1>
-                        <p className="mt-4 max-w-3xl mx-auto text-base sm:text-lg text-muted-foreground">
-                            Experience seamless attendance tracking with our dual-factor validation system,
-                            combining geo-fencing and Wi-Fi verification for accurate time management.
-                        </p>
-                    </motion.div>
-                </div>
-            </section>
+       <PrecisionAttendance />
 
             {/* Dual-Factor Validation Section */}
             <section className="py-12 sm:py-16 bg-gradient-to-b from-cyan-50 to-white">
