@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const impactStats = [
     {
@@ -23,8 +24,8 @@ const progressStats = [
     },
     {
         label: "Fraudulent Check-Ins Eliminated",
-        value: 100,
-        displayValue: "100%",
+        value: 95,
+        displayValue: "95%",
     },
     {
         label: "Employee Setup Time Reduced",
@@ -45,18 +46,18 @@ export default function CTASection() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B]">
+                        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-medium text-[#0B0E0F]">
                             The New Standard
                         </h2>
-                        <h3 className="text-2xl sm:text-3xl font-bold italic text-[#0D9488] mt-2">
+                        <h3 className="text-2xl sm:text-4xl font-bold lg:text-5xl text-gradient-to-r from-[#4E9DAB] to-[#336C79] mt-2 ml-20">
                             In Verifiable
                         </h3>
-                        <p className="text-2xl sm:text-3xl font-bold text-[#1E293B] mt-2">
+                        <p className="text-2xl sm:text-4xl font-medium lg:text-4xl text-[#0B0E0F] mt-2 ml-12">
                             Workforce Management
                         </p>
 
                         <p className="mt-6 text-sm text-[#64748B] leading-relaxed max-w-md">
-                            Duty Hour App brings integrity and automation to your HR processes. Our dual-validation system ensures every minute is accounted for, eliminating manual data entry and risk.
+                           Duty Hour App brings integrity and automation to your HR processes. Our dual-validation system ensures every minute is accounted for, eliminating manual data entry and risk.
                         </p>
 
                         <div className="mt-6">
@@ -98,20 +99,22 @@ export default function CTASection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6"
+                        className="bg-white rounded-xl max-w-[480px] shadow-xl border border-gray-100 p-6 lg:p-12"
                     >
                         {/* Measurable Impact Header */}
                         <div className="flex items-center gap-4 mb-6">
-                            <div className="text-sm font-semibold text-[#1E293B]">Measurable Impact</div>
+                            <div>
+                                <div className="text-sm  text-[#1E293B] mb-2">Measurable Impact</div>
                             <div className="flex -space-x-2">
-                                {[1, 2, 3, 4].map((i) => (
-                                    <div
-                                        key={i}
-                                        className="w-8 h-8 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold"
-                                    >
-                                        {String.fromCharCode(64 + i)}
-                                    </div>
-                                ))}
+                                    <div className="flex -space-x-3 ">
+                                                                   <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (16).png" alt="Image" height={100} width={100} />
+                                                                   <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (17).png" alt="Image" height={100} width={100} />
+                                                                   <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (21).png" alt="Image" height={100} width={100} />
+                                                                   <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (22).png" alt="Image" height={100} width={100} />
+
+                                                                   </div>
+                                                               
+                            </div>
                             </div>
                             <div className="flex gap-8 ml-auto">
                                 {impactStats.map((stat) => (
@@ -134,8 +137,8 @@ export default function CTASection() {
                                     transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
                                 >
                                     <div className="flex justify-between items-center mb-2">
-                                        <span className="text-sm font-medium text-[#1E293B]">{stat.label}</span>
-                                        <span className="text-sm font-bold text-[#1E293B]">{stat.displayValue}</span>
+                                        <span className="text-sm font-medium text-[#091A2F]">{stat.label}</span>
+                                        <span className="text-sm font-bold text-[#091A2F]">{stat.displayValue}</span>
                                     </div>
                                     <div className="h-2 bg-[#E2E8F0] rounded-full overflow-hidden">
                                         <motion.div
@@ -152,49 +155,7 @@ export default function CTASection() {
                     </motion.div>
                 </div>
 
-                {/* Total Control Section */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.3 }}
-                    className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
-                >
-                    {/* Left Stats */}
-                    <div className="space-y-8">
-                        <div>
-                            <h3 className="text-2xl font-bold text-[#1E293B]">Total Control</h3>
-                            <h4 className="text-xl font-bold text-[#0D9488]">Instant Setup</h4>
-                            <p className="text-xl font-bold text-[#1E293B]">Zero Attendance Fraud</p>
-                        </div>
-
-                        <div className="space-y-4">
-                            <div>
-                                <div className="text-3xl font-bold text-[#1E293B]">12.0k+</div>
-                                <div className="text-sm text-[#64748B]">Employees Managed</div>
-                            </div>
-                            <div>
-                                <div className="text-3xl font-bold text-[#1E293B]">42.0k+</div>
-                                <div className="text-sm text-[#64748B]">Employee Overview</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Right Description */}
-                    <div>
-                        <p className="text-sm text-[#64748B] leading-relaxed">
-                            Your subscribed HRM dashboard is the command center for your business. Easily define your institution&apos;s geo-fenced location and Wi-Fi credentials, onboard employees, and manage subscription packages. Gain immediate access to highly accurate, verified attendance data, ensuring payroll integrity.
-                        </p>
-                        <div className="mt-6">
-                            <a
-                                href="/contact"
-                                className="inline-flex items-center px-6 py-3 bg-[#0D9488] text-white rounded-full hover:bg-[#0F766E] transition-colors shadow-lg shadow-teal-500/20"
-                            >
-                                Start Your Free Trial
-                            </a>
-                        </div>
-                    </div>
-                </motion.div>
+            
             </div>
         </section>
     );

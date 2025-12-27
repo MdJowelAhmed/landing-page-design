@@ -46,44 +46,44 @@
 
 :root {
   --radius: 0.625rem;
-  
+
   /* Duty Hour App Color Scheme - Light Theme */
   --background: #F8F6F3;
   --foreground: #1E293B;
-  
+
   --card: #FFFFFF;
   --card-foreground: #1E293B;
-  
+
   --popover: #FFFFFF;
   --popover-foreground: #1E293B;
-  
+
   /* Primary - Teal */
   --primary: #0D9488;
   --primary-foreground: #FFFFFF;
-  
+
   /* Secondary - Orange */
   --secondary: #EA580C;
   --secondary-foreground: #FFFFFF;
-  
+
   --muted: #F1F5F9;
   --muted-foreground: #64748B;
-  
+
   --accent: #F1F5F9;
   --accent-foreground: #1E293B;
-  
+
   --destructive: #EF4444;
-  
+
   --border: #E2E8F0;
   --input: #E2E8F0;
   --ring: #0D9488;
-  
+
   /* Chart colors */
   --chart-1: #0D9488;
   --chart-2: #EA580C;
   --chart-3: #0F766E;
   --chart-4: #F97316;
   --chart-5: #14B8A6;
-  
+
   /* Sidebar */
   --sidebar: #FFFFFF;
   --sidebar-foreground: #1E293B;
@@ -99,8 +99,20 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-poppins), sans-serif;
+  }
+
+  /* Apply Montserrat to all heading tags */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-montserrat), sans-serif;
   }
 }
 

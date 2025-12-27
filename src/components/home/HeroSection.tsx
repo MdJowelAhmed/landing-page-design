@@ -24,10 +24,10 @@ export default function HeroSection() {
 
                     >
                         {/* Main Heading */}
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl  tracking-tight leading-tight lg:mb-16">
+                        <h1 className="text-4xl sm:text-5xl lg:text-5xl  tracking-tight leading-tight lg:mb-16">
                             <span className="text-[#1E293B]">Your Workforce</span>
                             <br />
-                            <span className="text-[#0D9488] font-bold ml-10 lg:ml-16">Your Control</span>
+                            <span className="text-[#0D9488] font-bold ml-10 lg:ml-16 my-4">Your Control</span>
                             <br />
                             <span className="text-[#1E293B]">Perfected Attendance</span>
                         </h1>
