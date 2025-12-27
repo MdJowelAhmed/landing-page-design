@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import PrecisionAttendance from "./PrecisionAttendance";
+import DualFactor from "./DualFactor";
 
 const validationSteps = [
     {
@@ -52,56 +53,7 @@ export default function ServicesContent() {
             {/* Hero Section */}
        <PrecisionAttendance />
 
-            {/* Dual-Factor Validation Section */}
-            <section className="py-12 sm:py-16 bg-gradient-to-b from-cyan-50 to-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5 }}
-                        className="text-center mb-12"
-                    >
-                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-                            How Dual-Factor Validation Works
-                        </h2>
-                        <p className="mt-3 text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto">
-                            The Duty Hour App delivers verified attendance through a dual-factor system: employees log in only when
-                            within designated geo-fenced locations and connected to specific Wi-Fi SSIDs.
-                        </p>
-                    </motion.div>
-
-                    <motion.div
-                        variants={containerVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
-                    >
-                        {validationSteps.map((step) => (
-                            <motion.div key={step.number} variants={cardVariants}>
-                                <div className="h-full rounded-2xl bg-white border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-                                    <div className={`${step.bgColor} p-6 sm:p-8`}>
-                                        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white flex items-center justify-center">
-                                            <span className="text-2xl sm:text-3xl font-bold text-teal-600">
-                                                {step.number}
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div className="p-6">
-                                        <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
-                                            {step.title}
-                                        </h3>
-                                        <p className="text-sm text-muted-foreground leading-relaxed">
-                                            {step.description}
-                                        </p>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </motion.div>
-                </div>
-            </section>
+         <DualFactor />
 
             {/* Precision Attendance Section */}
             <section className="py-16 sm:py-20 bg-gradient-to-b from-cyan-50 to-white">
