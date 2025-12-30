@@ -1,5 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { IoMdTimer } from "react-icons/io";
+import { IoHeartOutline } from "react-icons/io5";
+import { GoShieldCheck } from "react-icons/go";
 
 const AutomatingDuty = () => {
   return (
@@ -16,9 +19,9 @@ const AutomatingDuty = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="col-span-8"
+            className="col-span-7 "
           >
-            <h2 className="text-xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl w-5xl font-bold text-gray-900 mb-6 leading-tight  ">
               Automating Duty-Hour Tracking to Empower Tomorrow’s Physicians
             </h2>
 
@@ -31,8 +34,8 @@ const AutomatingDuty = () => {
             {/* Features Row */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
-                  <svg
+                <div className="w-10 h-10 rounded-full  flex items-center justify-center 0">
+                  {/* <svg
                     className="w-5 h-5 text-teal-700"
                     fill="currentColor"
                     viewBox="0 0 20 20"
@@ -42,7 +45,9 @@ const AutomatingDuty = () => {
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
                     />
-                  </svg>
+                  </svg> */}
+
+                  <IoMdTimer className="w-6 h-6 " />
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-gray-900">
@@ -52,20 +57,8 @@ const AutomatingDuty = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
-                  <svg
-                    className="w-5 h-5 text-teal-700"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
+                <div className="w-10 h-10 rounded-full  flex items-center justify-center ">
+                  <GoShieldCheck className="w-6 h-6 " />
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-gray-900">
@@ -75,19 +68,8 @@ const AutomatingDuty = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
-                  <svg
-                    className="w-5 h-5 text-teal-700"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                    <path
-                      fillRule="evenodd"
-                      d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                <div className="w-10 h-10 rounded-full  flex items-center justify-center ">
+                  <IoHeartOutline className="w-6 h-6 " />
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-gray-900">
@@ -98,11 +80,11 @@ const AutomatingDuty = () => {
             </div>
 
             <div className="flex flex-wrap items-center gap-6">
-              <button className="bg-teal-600 hover:bg-teal-700 text-white font-semibold px-10 py-4 rounded-xl text-base transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105">
+              <button className="bg-gradient-to-r from-[#4E9DAB] to-[#336C79] hover:bg-gradient-to-r hover:from-[#336C79] hover:to-[#4E9DAB] text-white font-semibold px-10 py-4 rounded-xl text-base transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105">
                 Start Your Free Trial
               </button>
               <a
-                href="#"
+                href=""
                 className="text-teal-700 font-medium hover:text-teal-800 flex items-center gap-2 group"
               >
                 Read Our Story
@@ -129,10 +111,11 @@ const AutomatingDuty = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative col-span-4"
+            className="relative col-span-5 mt-28"
           >
             {/* Decorative dotted arc */}
-            <div className="absolute -top-8 -right-8 w-48 h-48 border-2 border-dashed border-teal-300 rounded-full opacity-60"></div>
+            <div className="absolute top-1 -right-3 w-48 h-48 border-2 border-dashed border-teal-700 rounded-full opacity-60"></div>
+            <div className="absolute -top-6 -right-8 w-60 h-60 border-2 border-dashed border-teal-700 rounded-full opacity-60"></div>
 
             <div className="bg-white rounded-3xl shadow-2xl p-4 lg:p-5 relative">
               <div className="flex items-start justify-between mb-">
@@ -149,31 +132,28 @@ const AutomatingDuty = () => {
               {/* Status Section */}
               <div className="mb-4">
                 <div className="flex items-center justify-between mb-">
-                  <span className="text-sm font-semibold text-gray-700">
-                    Status
-                  </span>
+                  <p className="text-sm font-semibold text-gray-700">Status</p>
                   <div className="text-right mt-3">
-                    <div className="text-xs text-gray-500 ">Compliance</div>
-                    <div className="text-lg font-bold text-gray-900">
-                      100% this week
-                    </div>
+                    <div className="text-xs text-gray-500 mb-3">Compliance</div>
                   </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="inline-block px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">
-                    On Duty
-                  </span>
-                  <span className="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full">
-                    Auto-check-in
-                  </span>
+                <div className="flex items-center gap-2 justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="inline-block px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">
+                      On Duty
+                    </span>
+                    <span className="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full">
+                      Auto-check-in
+                    </span>
+                  </div>
+                  <div className=" font-bold text-gray-900  ">
+                    100% this week
+                  </div>
                 </div>
               </div>
 
-              {/* Divider */}
-              <div className="border-t border-gray-200 my-6"></div>
-
               {/* Next Risk Section */}
-              <div className="mb-8">
+              <div className="mb-8 flex items-center justify-between">
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="text-sm font-semibold text-gray-700 block mb-2">
@@ -184,47 +164,49 @@ const AutomatingDuty = () => {
                     </span>
                   </div>
                 </div>
-              </div>
 
-              {/* Circular Progress - Fatigue Meter */}
-              <div className="flex justify-end">
-                <div className="relative w-36 h-36">
-                  {/* Background circle */}
-                  <svg className="w-full h-full transform -rotate-90">
-                    <circle
-                      cx="72"
-                      cy="72"
-                      r="60"
-                      stroke="#e0f2f1"
-                      strokeWidth="10"
-                      fill="none"
-                    />
-                    {/* Progress circle */}
-                    <circle
-                      cx="72"
-                      cy="72"
-                      r="60"
-                      stroke="#0d9488"
-                      strokeWidth="10"
-                      fill="none"
-                      strokeDasharray={`${2 * Math.PI * 60}`}
-                      strokeDashoffset={`${2 * Math.PI * 60 * (1 - 0.68)}`}
-                      strokeLinecap="round"
-                      className="transition-all duration-1000"
-                    />
-                  </svg>
-                  {/* Center text */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <div className="text-sm font-medium text-teal-700 mb-1">
-                      Fatigue
+                {/* Circular Progress - Fatigue Meter */}
+                <div className="flex justify-end">
+                  <div className="relative w-36 h-36">
+                    {/* Background circle */}
+                    <svg className="w-full h-full transform -rotate-90">
+                      <circle
+                        cx="72"
+                        cy="72"
+                        r="60"
+                        stroke="#e0f2f1"
+                        strokeWidth="10"
+                        fill="none"
+                      />
+                      {/* Progress circle */}
+                      <circle
+                        cx="72"
+                        cy="72"
+                        r="60"
+                        stroke="#0d9488"
+                        strokeWidth="10"
+                        fill="none"
+                        strokeDasharray={`${2 * Math.PI * 60}`}
+                        strokeDashoffset={`${2 * Math.PI * 60 * (1 - 0.68)}`}
+                        strokeLinecap="round"
+                        className="transition-all duration-1000"
+                      />
+                    </svg>
+                    {/* Center text */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center">
+                      <div className="text-sm font-medium text-teal-700 mb-1">
+                        Fatigue
+                      </div>
+                      <div className="text-3xl font-bold text-teal-900">
+                        68%
+                      </div>
                     </div>
-                    <div className="text-3xl font-bold text-teal-900">68%</div>
                   </div>
                 </div>
               </div>
 
               {/* Tip text */}
-              <p className="text-xs text-gray-500 text-right mt-4">
+              <p className="text-xs text-start text-gray-500 text-right mt-4">
                 Tip: micro-nap recommended - consider early sign-out
               </p>
             </div>
