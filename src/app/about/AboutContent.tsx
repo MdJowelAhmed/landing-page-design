@@ -1,13 +1,12 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+
 import AutomatingDuty from "./AutomatingDuty";
 import ManualDocumentation from "./ManualDocumentation";
 import MissionAndVision from "./MissionAndVision";
 import AutomatedTracking from "./AutomatedTracking";
 import SecurityCompliance from "./SecurityCompliance";
+import OurTeam from "./OurTeam";
 
 export default function AboutContent() {
   return (
@@ -20,6 +19,8 @@ export default function AboutContent() {
       <AutomatedTracking />
 
       <SecurityCompliance />
+
+      <OurTeam />
     </>
   );
 }
