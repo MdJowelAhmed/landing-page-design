@@ -48,7 +48,7 @@ export default function HeroSection() {
                                     <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (22).png" alt="Image" height={100} width={100} />
                                 </div>
                                 <Link href="/contact">
-                                    <Button className="bg-[#0D9488] hover:bg-[#0F766E] text-white rounded-lg px-8 py-6 text-base shadow-lg shadow-teal-500/20">
+                                    <Button className="bg-[#0D9488] hover:bg-[#0F766E] text-white rounded-lg px-5 py-6 text-base shadow-lg shadow-teal-500/20">
                                         Start Your Free Trial
                                     </Button>
                                 </Link>
