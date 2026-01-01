@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import AutomatingDuty from "./AutomatingDuty";
+import ManualDocumentation from "./ManualDocumentation";
 
 const features = [
   {
@@ -155,28 +156,6 @@ const securityValues = [
   },
 ];
 
-const timeline = [
-  {
-    year: "2021-2023",
-    title:
-      "System crash crisis start, counseling, managing and attendance resident issue time to fix operations.",
-    description:
-      "Duty Hour App launched to sort work timelogic: managing and support resident hours.",
-  },
-  {
-    year: "2024",
-    title:
-      "Partnering with programs, trainees, and admin to product smartchat treating hours and safeguard residents result to ensure.",
-    description:
-      "Duty Hour App launched to sort work timelogic: managing and support resident hours.",
-  },
-  {
-    year: "2025+",
-    title:
-      "Our present effort medical resident physicians through automated tracking and data-driven solutions that give effective time for clinical duties, uphold best working hours, intelligent well-being and ensure the highest standards of patient care by proactively identifying the visibility of the labour movement with next-generation workflow labour.",
-    description: "",
-  },
-];
 
 const allValues = [
   {
@@ -477,73 +456,7 @@ export default function AboutContent() {
         </div>
       </section>
 
-      {/* Our Story Timeline */}
-      <section className="py-16 sm:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <p className="text-sm text-muted-foreground mb-3">Our Story</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              From Manual Documentation to Invisible Tracking
-            </h2>
-            <p className="text-base text-muted-foreground max-w-4xl">
-              The Duty Hour App was born out of frustrations with outdated,
-              time-consuming, labor-intensive methods; tracking and the tedious
-              choice of manual duty hour documentation. In 2121, after 16 years
-              working inside mandatory programs, Loss Mountain duty-hour
-              accreditation track a solution: the Duty-Hour App.
-            </p>
-          </motion.div>
-
-          <div className="space-y-8">
-            {timeline.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex gap-6"
-              >
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-teal-500 text-white flex items-center justify-center font-bold text-sm">
-                    <svg
-                      className="w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div className="flex-1 pb-8 border-l-2 border-gray-200 pl-6 -ml-6">
-                  <div className="bg-teal-50 rounded-lg p-6">
-                    <h4 className="text-lg font-bold text-teal-600 mb-2">
-                      {item.year}
-                    </h4>
-                    <p className="text-sm text-foreground font-medium mb-2">
-                      {item.title}
-                    </p>
-                    {item.description && (
-                      <p className="text-sm text-muted-foreground">
-                        {item.description}
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ManualDocumentation />
 
       {/* Mission, Vision & Values */}
       <section className="py-16 sm:py-20 bg-gradient-to-b from-white to-gray-50">
