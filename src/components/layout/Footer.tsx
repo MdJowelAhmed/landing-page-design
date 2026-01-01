@@ -14,34 +14,34 @@ export default function Footer() {
     return (
         <footer className="bg-[#091A2F] border-t border-gray-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16 items-center">
                     {/* Brand Section */}
                     <div className="md:col-span-1">
                         <Link href="/" className="flex items-center space-x-3">
                          <Image src="/assets/footer-logo.svg" alt="Duty Hour App" width={80} height={80} />
                         </Link>
-                        <h3 className="mt-4 text-xl font-bold text-[#1E293B]">
+                        <h3 className="mt-4 text-xl font-bold text-white">
                             Duty Hour App
                         </h3>
-                        <p className="text-sm text-[#64748B] font-medium">
+                        <p className="text-sm text-white font-medium">
                             Built for Operational Integrity
                         </p>
-                        <p className="mt-4 text-sm text-[#64748B] max-w-sm">
+                        <p className="mt-4 text-sm text-white max-w-sm">
                             The Duty Hour App is committed to delivering the most accurate, fraud-proof attendance data available to businesses worldwide.
                         </p>
                     </div>
 
                     {/* Content Links */}
                     <div className="md:col-span-1 md:mx-auto">
-                        <h3 className="text-sm font-semibold text-[#1E293B] mb-4">
+                        <h3 className="text-sm font-semibold text-center text-white mb-4">
                             Content
                         </h3>
-                        <ul className="space-y-3">
+                        <ul className="space-y-3 flex  gap-5">
                             {footerLinks.content.map((link) => (
                                 <li key={link.href}>
                                     <Link
                                         href={link.href}
-                                        className="text-sm text-[#64748B] hover:text-[#0D9488] transition-colors duration-200"
+                                        className="text-sm text-white hover:text-[#0D9488] transition-colors duration-200"
                                     >
                                         {link.label}
                                     </Link>
@@ -52,10 +52,10 @@ export default function Footer() {
 
                     {/* Download Section */}
                     <div className="md:col-span-1">
-                        <p className="text-sm text-[#64748B] mb-4">
+                        <p className="text-sm text-white mb-4">
                             Get Exclusive News On New Features And Subscription Offers.
                         </p>
-                        <h3 className="text-sm font-semibold text-[#1E293B] mb-4">
+                        <h3 className="text-sm font-semibold text-white mb-4">
                             Download Now
                         </h3>
                         <div className="flex flex-wrap gap-3">
@@ -91,13 +91,11 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="mt-12 pt-8 border-t border-gray-200">
-                    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <p className="text-sm text-[#64748B]">
+                    <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
+                        <p className="text-sm text-white">
                             © {new Date().getFullYear()} Duty Hour App. All rights reserved.
                         </p>
-                        <p className="text-sm text-[#64748B]">
-                            Built for Operational Integrity
-                        </p>
+                       
                     </div>
                 </div>
             </div>
