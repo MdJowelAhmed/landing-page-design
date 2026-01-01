@@ -176,6 +176,11 @@ export default function AboutContent() {
   return (
     <>
       <AutomatingDuty />
+      <ManualDocumentation />
+
+<MissionAndVision />
+
+
 
       {/* Hero Section - About Who */}
       <section className="py-16 sm:py-20 bg-gradient-to-b from-background to-background">
@@ -281,9 +286,7 @@ export default function AboutContent() {
         </div>
       </section>
 
-      <ManualDocumentation />
-
-     <MissionAndVision />
+    
     </>
   );
 }

@@ -29,15 +29,15 @@ const ManualDocumentation = () => {
             className="mb-12"
           >
             <p className="text-sm text-gray-600 mb-3">Our Story</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#091A2F] mb-6">
               From Manual Documentation to Invisible Tracking
             </h2>
             <p className="text-base text-gray-700 max-w-4xl mb-4">
               For more than a decade, graduate-medical-education professionals
-              have juggled patient care, teaching and the tedious chore of manual
-              duty hour documentation. In 2025, after 16 years working inside
-              residency programs, Mark Bolden turned that frustration into a
-              solution: the Duty Hour App.
+              have juggled patient care, teaching and the tedious chore of
+              manual duty hour documentation. In 2025, after 16 years working
+              inside residency programs, Mark Bolden turned that frustration
+              into a solution: the Duty Hour App.
             </p>
             <p className="text-base text-gray-700 max-w-4xl">
               From day one, our goal has been simple make work-hour tracking
@@ -53,7 +53,7 @@ const ManualDocumentation = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-6"
+              className="space-y-6 border-l-3 border-teal-300"
             >
               {timeline.map((item, index) => (
                 <motion.div
@@ -62,18 +62,18 @@ const ManualDocumentation = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex gap-4"
+                  className="flex gap-4 "
                 >
-                  <div className="shrink-0">
+                  <div className="shrink-0 ">
                     {/* Teal circular icon with inner circle (target/record button style) */}
-                    <div className="w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center">
-                      <div className="w-5 h-5 rounded-full bg-teal-300"></div>
+                    <div className="w-5 h-5 rounded-full border-3 border-teal-500 flex items-center justify-center">
+                      <div className="w-2 h-2 rounded-full bg-teal-500"></div>
                     </div>
                   </div>
-                  <div className="flex-1 pt-1">
+                  <div className="flex-1 ">
                     <p className="text-base text-gray-700 leading-relaxed">
-                      <span className="font-semibold">{item.year}:</span>{" "}
-                      {item.text}
+                      <h3 className="font-semibold">{item.year}:</h3>{" "}
+                     <p className="text-sm text-gray-700 leading-relaxed"> {item.text}</p>
                     </p>
                   </div>
                 </motion.div>
@@ -87,7 +87,7 @@ const ManualDocumentation = () => {
               viewport={{ once: true }}
               className="lg:pt-0"
             >
-              <div className="bg-gray-100 rounded-xl p-6 lg:p-8">
+              <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-md border border-gray-200">
                 <h3 className="text-lg font-bold text-gray-900 mb-4">
                   Our promise:
                 </h3>
