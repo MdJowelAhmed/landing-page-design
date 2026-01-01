@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = {
@@ -11,19 +12,13 @@ const footerLinks = {
 
 export default function Footer() {
     return (
-        <footer className="bg-[#F8F6F3] border-t border-gray-200">
+        <footer className="bg-[#091A2F] border-t border-gray-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Brand Section */}
                     <div className="md:col-span-1">
                         <Link href="/" className="flex items-center space-x-3">
-                            {/* Logo Icon */}
-                            <div className="w-12 h-12 rounded-full border-2 border-[#0D9488] flex items-center justify-center">
-                                <svg className="w-7 h-7 text-[#0D9488]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <path d="M12 6v6l4 2" />
-                                </svg>
-                            </div>
+                         <Image src="/assets/footer-logo.svg" alt="Duty Hour App" width={80} height={80} />
                         </Link>
                         <h3 className="mt-4 text-xl font-bold text-[#1E293B]">
                             Duty Hour App
