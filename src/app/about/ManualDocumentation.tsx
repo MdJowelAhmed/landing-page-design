@@ -87,7 +87,7 @@ const ManualDocumentation = () => {
               viewport={{ once: true }}
               className="lg:pt-0"
             >
-              <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-md border border-gray-200">
+              <div className="bg-white rounded-2xl p-6 lg:p-8  border border-gray-200">
                 <h3 className="text-lg font-bold text-gray-900 mb-4">
                   Our promise:
                 </h3>

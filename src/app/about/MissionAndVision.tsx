@@ -243,7 +243,7 @@ const MissionAndVision = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="p-8 rounded-xl bg-white shadow-md"
+              className="p-8 rounded-xl bg-white shadow-md hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex gap-6">
                 <div className="shrink-0">
@@ -293,7 +293,7 @@ const MissionAndVision = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="p-8 rounded-xl bg-white shadow-md"
+              className="p-8 rounded-xl bg-white shadow-md hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex gap-6">
                 <div className="shrink-0">
@@ -346,13 +346,13 @@ const MissionAndVision = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+              className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 "
             >
               {allValues.map((value, index) => (
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  className="p-6 rounded-xl bg-white shadow-md"
+                  className="p-6 rounded-xl bg-white shadow-md hover:border border-teal-500 transition-all duration-300"
                 >
                   <div
                     className={`w-14 h-14 rounded-lg ${value.colorClass} text-white flex items-center justify-center mb-4`}
