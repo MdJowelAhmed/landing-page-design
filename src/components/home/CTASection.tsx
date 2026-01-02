@@ -36,7 +36,7 @@ const progressStats = [
 
 export default function CTASection() {
     return (
-        <section className="py-20 bg-white">
+        <section className="pb-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     {/* Left - Heading & Download */}
@@ -49,7 +49,7 @@ export default function CTASection() {
                         <h2 className="text-3xl sm:text-4xl lg:text-4xl font-medium text-accent">
                             The New Standard
                         </h2>
-                        <h3 className="text-2xl sm:text-4xl font-bold lg:text-5xl text-gradient-to-r from-[#4E9DAB] to-[#336C79] mt-2 ml-20">
+                        <h3 className="text-2xl sm:text-4xl font-bold lg:text-5xl text-primary-foreground my-4 ml-20">
                             In Verifiable
                         </h3>
                         <p className="text-2xl sm:text-4xl font-medium lg:text-4xl text-accent mt-2 ml-12">
@@ -104,7 +104,7 @@ export default function CTASection() {
                         {/* Measurable Impact Header */}
                         <div className="flex items-center gap-4 mb-6">
                             <div>
-                                <div className="text-sm  text-[#1E293B] mb-2">Measurable Impact</div>
+                                <div className="text-sm  text-accent mb-2">Measurable Impact</div>
                             <div className="flex -space-x-2">
                                     <div className="flex -space-x-3 ">
                                                                    <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (16).png" alt="Image" height={100} width={100} />
@@ -119,7 +119,7 @@ export default function CTASection() {
                             <div className="flex gap-8 ml-auto">
                                 {impactStats.map((stat) => (
                                     <div key={stat.label} className="text-center">
-                                        <div className="text-2xl font-bold text-[#1E293B]">{stat.displayValue}</div>
+                                        <div className="text-2xl font-bold text-accent">{stat.displayValue}</div>
                                         <div className="text-[10px] text-[#64748B]">{stat.label}</div>
                                     </div>
                                 ))}
@@ -137,8 +137,8 @@ export default function CTASection() {
                                     transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
                                 >
                                     <div className="flex justify-between items-center mb-2">
-                                        <span className="text-sm font-medium text-[#091A2F]">{stat.label}</span>
-                                        <span className="text-sm font-bold text-[#091A2F]">{stat.displayValue}</span>
+                                        <span className="text-sm font-medium text-accent">{stat.label}</span>
+                                        <span className="text-sm font-bold text-accent">{stat.displayValue}</span>
                                     </div>
                                     <div className="h-2 bg-[#E2E8F0] rounded-full overflow-hidden">
                                         <motion.div
@@ -146,7 +146,7 @@ export default function CTASection() {
                                             whileInView={{ width: `${stat.value}%` }}
                                             viewport={{ once: true }}
                                             transition={{ duration: 1, delay: 0.5 + index * 0.1, ease: "easeOut" }}
-                                            className="h-full bg-gradient-to-r from-[#0D9488] to-[#14B8A6] rounded-full"
+                                            className="h-full bg-gradient-to-r from-primary to-primary-foreground rounded-full"
                                         />
                                     </div>
                                 </motion.div>
