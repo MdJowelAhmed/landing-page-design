@@ -7,7 +7,7 @@ const OurTeam = () => {
   return (
     <div>
       {/* Our Team Section */}
-      <section className="py-16 sm:py-20 bg-gray-50">
+      <section className="py-16 sm:py-20 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top Section - Mark Bolden's Profile */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
@@ -87,7 +87,7 @@ const OurTeam = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className="px-3 py-1 bg-primary text-accent rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-gray-200 text-accent rounded-full text-xs font-medium"
                   >
                     {tag}
                   </motion.span>
@@ -115,13 +115,16 @@ const OurTeam = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-16">
               {/* Start Your Free Trial Button */}
-              <motion.button
+              <motion.a
+                target="_blank"
+                href="https://business.dutyhourapp.com"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-primary to-primary-foreground text-white font-semibold rounded-lg text-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Start Your Free Trial
-              </motion.button>
+              </motion.a>
 
               {/* App Store Buttons */}
               <div className="flex gap-2 flex-col font-semibold ">
@@ -150,7 +153,7 @@ const OurTeam = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                      className="flex justify-start items-center gap-2 px-4 py-[6px] bg-secondary text-white rounded-lg hover:bg-secondary transition-colors"
+                    className="flex justify-start items-center gap-2 px-4 py-[6px] bg-secondary text-white rounded-lg hover:bg-secondary transition-colors"
                   >
                     <svg
                       className="w-6 h-6"

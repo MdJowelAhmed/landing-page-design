@@ -150,7 +150,7 @@ export default function HeroSection() {
                 >
   <div className="mt-10 text-center lg:text-left  max-w-4xl">
                                 <p className="text-sm text-accent leading-relaxed">
-                                    Take command of your institution's attendance. The Duty Hour App provides business admins with a powerful HRM dashboard, enabled by geo-fenced and Wi-Fi-verified check-ins. Ensure every minute counts, manage employees effortlessly, and secure your operations with unparalleled accuracy.
+                                    Take command of your institution`s attendance. The Duty Hour App provides business admins with a powerful HRM dashboard, enabled by geo-fenced and Wi-Fi-verified check-ins. Ensure every minute counts, manage employees effortlessly, and secure your operations with unparalleled accuracy.
                                 </p>
                             </div>
                 </motion.div>

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { IoMdTimer } from "react-icons/io";
 import { IoHeartOutline } from "react-icons/io5";
 import { GoShieldCheck } from "react-icons/go";
+import { Button } from "@/components/ui/button";
 
 const AutomatingDuty = () => {
   return (
@@ -80,9 +81,11 @@ const AutomatingDuty = () => {
             </div>
 
             <div className="flex flex-wrap items-center gap-6">
-              <button className="bg-gradient-to-r from-primary to-primary-foreground  text-white font-semibold px-10 py-4 rounded-xl text-base transition-all duration-200 shadow-md hover:shadow-xl hover:scale-105">
-                Start Your Free Trial
-              </button>
+              <Button asChild className="bg-gradient-to-r from-primary to-primary-foreground  text-white font-semibold px-10 py-6 rounded-md text-base transition-all duration-200 shadow-md hover:shadow-xl hover:scale-105">
+                <a target="_blank" href="https://business.dutyhourapp.com" rel="noopener noreferrer">
+                  Start Your Free Trial
+                </a>
+              </Button>
               <a
                 href=""
                 className="text-teal-700 font-medium hover:text-teal-800 flex items-center gap-2 group"
