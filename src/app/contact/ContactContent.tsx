@@ -56,14 +56,14 @@ export default function ContactContent() {
     };
 
     return (
-        <div className="min-h-screen bg-gray-50/50">
+        <div className="min-h-screen bg-">
             {/* Header Section */}
             <section className="bg-gradient-to-b from-teal-50 to-transparent pt-24 pb-12 text-center">
                 <div className="max-w-4xl mx-auto px-4">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-5xl font-bold text-[#0F172A] mb-4"
+                        className="text-4xl md:text-5xl font-bold text-accent mb-4"
                     >
                         Get In Touch
                     </motion.h1>
@@ -71,7 +71,7 @@ export default function ContactContent() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto"
+                        className="text-accent text-sm md:text-base max-w-2xl mx-auto"
                     >
                         Our team is ready to answer your questions about security, integration, and subscription tiers. Contact us today to schedule a personalized demo and see how easily you can achieve guaranteed attendance accuracy and total payroll integrity.
                     </motion.p>
@@ -88,14 +88,14 @@ export default function ContactContent() {
                         className="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row min-h-[600px]"
                     >
                         {/* Left Panel - Contact Info */}
-                        <div className="lg:w-[40%] bg-gradient-to-br from-[#388E96] to-[#2C7A82] p-8 md:p-12 text-white relative overflow-hidden">
+                        <div className="lg:w-[40%] bg-gradient-to-br from-primary to-primary-foreground p-8 md:p-12 text-white relative overflow-hidden">
                             {/* Decorative Circle */}
                             <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
                             <div className="absolute bottom-0 right-0 w-48 h-48 bg-gradient-to-br from-white/10 to-transparent rounded-full translate-x-12 translate-y-12" />
 
                             <div className="relative z-10 h-full flex flex-col">
                                 <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
-                                <p className="text-teal-50 text-sm mb-12">
+                                <p className="text-white  text-sm mb-12">
                                     Contact us for a demo today. Eliminate payroll discrepancies and save up to 40% in admin verification time with our integrated system.
                                 </p>
 
@@ -106,7 +106,7 @@ export default function ContactContent() {
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                             </svg>
                                         </div>
-                                        <span className="text-teal-50 hover:text-white transition-colors cursor-pointer">+123456789</span>
+                                        <span className="text-white hover:text-white transition-colors cursor-pointer">+123456789</span>
                                     </div>
 
                                     <div className="flex items-start gap-4">
@@ -241,7 +241,7 @@ export default function ContactContent() {
                                         <Button
                                             type="submit"
                                             disabled={isSubmitting}
-                                            className="bg-[#388E96] hover:bg-[#2C7A82] text-white px-8 py-6 text-base rounded-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                                            className="bg-gradient-to-r from-primary to-primary-foreground  text-white px-8 py-6 text-base rounded-sm disabled:opacity-50 disabled:cursor-not-allowed"
                                         >
                                             {isSubmitting ? "Sending..." : "Send Message"}
                                         </Button>

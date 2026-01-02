@@ -15,6 +15,116 @@ export default function ServicesContent() {
 
       <DualFactor />
 
+      {/* Work-Life Balance Tools Section */}
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-accent max-w-4xl mx-auto">
+              Get essential insights & powerful tools for work-life balance
+            </h2>
+            <p className="mt-4 text-sm sm:text-base text-accent max-w-3xl mx-auto">
+              Empowering professionals to master their time, ensure compliance,
+              and track performance.
+            </p>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Desktop Display */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="shadow-lg rounded-2xl overflow-hidden border-l-4 border-[#4E9DAB]"
+            >
+              <div className="w-full">
+                <Image
+                  src="/assets/work-life3.png"
+                  alt="Desktop"
+                  width={580}
+                  height={500}
+                  className="object-cover"
+                />
+              </div>
+              <div className="text-start pl-8 my-6">
+                <div className="text-sm md:text-xl lg:font-bold text-accent mb-3">
+                  Navigating complex shifts: How the Duty Hour App simplifies
+                  your work schedule
+                </div>
+                <div className="text-xs text-accent">
+                  Maximize productivity: Strategies to optimize your tracked
+                  hours
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Info Cards */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="space-y-8"
+            >
+              <div className="flex items-center gap-6 shadow-2xl  border-b-2 border-r-4 border-[#4E9DAB] rounded-2xl p-4 bg-white hover:shadow-lg transition-shadow">
+                <div>
+                  {" "}
+                  <Image
+                    src="/assets/work-life2.png"
+                    alt="Desktop"
+                    width={500}
+                    height={500}
+                    className="object-cover"
+                  />{" "}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-accent mb-4">
+                    Ready to take control of your professional time?
+                  </h3>
+                  <p className="text-sm text-accent leading-relaxed">
+                    The Duty Hour App is the single tool you need to confidently
+                    manage your shifts, stay compliant, and find your ideal
+                    work-life balance.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-6 shadow-2xl  border-b-2 border-r-4 border-[#4E9DAB] rounded-2xl p-4 bg-white hover:shadow-lg transition-shadow">
+                <div>
+                  {" "}
+                  <Image
+                    src="/assets/work-life1.png"
+                    alt="Desktop"
+                    width={500}
+                    height={500}
+                    className="object-cover"
+                  />{" "}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-accent mb-4">
+                    Why Accurate Time Tracking Matters: Maximizing productivity
+                    & avoiding burnout
+                  </h3>
+                  <p className="text-sm text-accent leading-relaxed">
+                    <span className="font-semibold text-accent">
+                      Maximizes Productivity:
+                    </span>{" "}
+                    Identify time-sinks and optimize your peak performance hours
+                    using clear data.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Download App Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-linear-to-r from-primary to-primary-foreground rounded-2xl h-[398px] p-10">
         <div className="">
@@ -32,10 +142,13 @@ export default function ServicesContent() {
               </h2>
               <p className="text-sm  mb-8 text-white">
                 Get the power of accurate time tracking and compliance
-                on-the-go, ensuring <br /> save-ins sources with one-tap logging.
+                on-the-go, ensuring <br /> save-ins sources with one-tap
+                logging.
               </p>
               <div>
-                  <h4 className="text-lg font-semibold mb-4 text-white">Download Now</h4>
+                <h4 className="text-lg font-semibold mb-4 text-white">
+                  Download Now
+                </h4>
                 <div className="flex flex-wrap gap-3">
                   <Link href="#" className="inline-block">
                     <div className="flex items-center gap-2 bg-secondary text-white px-5 py-2 rounded-lg hover:bg-secondary transition-colors">
@@ -87,114 +200,6 @@ export default function ServicesContent() {
                   height={500}
                   className="object-cover"
                 />
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Work-Life Balance Tools Section */}
-      <section className="py-16 sm:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-accent max-w-4xl mx-auto">
-              Get essential insights & powerful tools for work-life balance
-            </h2>
-            <p className="mt-4 text-sm sm:text-base text-accent max-w-3xl mx-auto">
-              Empowering professionals to master their time, ensure compliance,
-              and track performance.
-            </p>
-          </motion.div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Desktop Display */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="shadow-lg rounded-2xl overflow-hidden border-l-4 border-[#4E9DAB]"
-            >
-              <div className="w-full">
-                <Image
-                  src="/assets/work-life3.png"
-                  alt="Desktop"
-                  width={580}
-                  height={500}
-                  className="object-cover"
-                />
-              </div>
-              <div className="text-start pl-8 my-6">
-                <div className="text-sm md:text-xl lg:font-bold text-accent mb-3">
-                Navigating complex shifts: How the Duty Hour App simplifies your work schedule
-                </div>
-                <div className="text-xs text-accent">
-                Maximize productivity: Strategies to optimize your tracked hours
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Info Cards */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="space-y-8"
-            >
-              <div className="flex items-center gap-6 shadow-2xl  border-b-2 border-r-4 border-[#4E9DAB] rounded-2xl p-4 bg-white hover:shadow-lg transition-shadow">
-                <div>
-                  {" "}
-                  <Image
-                    src="/assets/work-life2.png"
-                    alt="Desktop"
-                    width={500}
-                    height={500}
-                    className="object-cover"
-                  />{" "}
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-accent mb-4">
-                    Ready to take control of your professional time?
-                  </h3>
-                  <p className="text-sm text-accent leading-relaxed">
-                    The Duty Hour App is the single tool you need to confidently
-                    manage your shifts, stay compliant, and find your ideal
-                    work-life balance.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-6 shadow-2xl  border-b-2 border-r-4 border-[#4E9DAB] rounded-2xl p-4 bg-white hover:shadow-lg transition-shadow">
-                <div>
-                  {" "}
-                  <Image
-                    src="/assets/work-life1.png"
-                    alt="Desktop"
-                    width={500}
-                    height={500}
-                    className="object-cover"
-                  />{" "}
-                </div>
-                <div>
-                <h3 className="text-xl font-bold text-accent mb-4">
-                  Why Accurate Time Tracking Matters: Maximizing productivity &
-                  avoiding burnout
-                </h3>
-                <p className="text-sm text-accent leading-relaxed">
-                  <span className="font-semibold text-accent">
-                    Maximizes Productivity:
-                  </span>{" "}
-                  Identify time-sinks and optimize your peak performance hours
-                    using clear data.
-                  </p>
-                </div>
               </div>
             </motion.div>
           </div>
