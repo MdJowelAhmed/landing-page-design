@@ -113,7 +113,7 @@ const OurTeam = () => {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col lg:flex-row justify-center items-center gap-4">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-16">
               {/* Start Your Free Trial Button */}
               <motion.button
                 whileHover={{ scale: 1.05 }}

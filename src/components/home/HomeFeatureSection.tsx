@@ -68,7 +68,7 @@ export default function HomeFeatureSection() {
 
                             <Button
                                 size="lg"
-                                className="bg-[#388E96] hover:bg-[#2C7A82] text-white px-5 h-12 font-bold rounded-lg shadow-lg absolute bottom-12 right-12  md:-right-2"
+                                className="bg-gradient-to-r from-primary to-primary-foreground text-white px-5 h-12 font-bold rounded-lg shadow-lg absolute bottom-12 right-12  md:-right-2"
                             >
                                 Start Your Free Trial
                             </Button>

@@ -93,7 +93,7 @@ export default function FeaturesSection() {
                         <motion.div
                             key={feature.title}
                             variants={itemVariants}
-                            className="group relative p-6 rounded-2xl bg-white border border-gray-100 hover:bg-[#0D9488] hover:border-[#0D9488] hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-500 ease-in-out"
+                            className="group relative p-6 rounded-2xl bg-white border border-gray-100 hover:bg-gradient-to-r from-primary to-primary-foreground  hover:border-[#0D9488] hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-500 ease-in-out"
                         >
                             {/* Icon */}
                             <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 bg-[#F8F6F3] group-hover:bg-white/20 transition-all duration-500 ease-in-out">

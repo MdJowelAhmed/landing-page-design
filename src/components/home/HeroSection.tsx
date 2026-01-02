@@ -38,7 +38,7 @@ export default function HeroSection() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.3 }}
-                                className="mt-8 flex flex-wrap items-center gap-4 bg-[#FFFFFF94] p-4 py-6 rounded-md shadow-lg "
+                                className="mt-8 flex flex-wrap items-center gap-4 bg-[#FFFFFF94] px-4 py-4 rounded-md shadow-lg "
                             >
                                 {/* User Avatars */}
                                 <div className="flex -space-x-3 ">
@@ -48,7 +48,7 @@ export default function HeroSection() {
                                     <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (22).png" alt="Image" height={100} width={100} />
                                 </div>
                                 <Link href="/contact">
-                                    <Button className="bg-[#0D9488] hover:bg-[#0F766E] text-white rounded-lg px-5 py-6 text-base shadow-lg shadow-teal-500/20">
+                                    <Button className="bg-gradient-to-r from-primary to-primary-foreground text-white rounded-lg px-5 py-6 text-base shadow-lg shadow-teal-500/20">
                                         Start Your Free Trial
                                     </Button>
                                 </Link>

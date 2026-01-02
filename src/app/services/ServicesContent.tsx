@@ -148,7 +148,7 @@ export default function ServicesContent() {
               transition={{ duration: 0.6 }}
               className="space-y-8"
             >
-              <div className="flex items-center gap-6 shadow-lg border-b-2 border-r-4 border-[#4E9DAB] rounded-2xl p-4 bg-white hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-6 shadow-2xl  border-b-2 border-r-4 border-[#4E9DAB] rounded-2xl p-4 bg-white hover:shadow-lg transition-shadow">
                 <div>
                   {" "}
                   <Image
