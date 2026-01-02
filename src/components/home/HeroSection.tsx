@@ -100,7 +100,7 @@ export default function HeroSection() {
 
                                     <div
                                         
-                                        className="bg-[#fff] shadow-lg rounded-full p-5 mb-3"
+                                        className="bg-white shadow-lg rounded-full p-5 mb-3"
                                     >
 
                                        <motion.div
