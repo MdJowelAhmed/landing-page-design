@@ -15,7 +15,7 @@ export default function PrecisionAttendance() {
                     transition={{ duration: 0.5 }}
                     className="mb-12"
                 >
-                    <h2 className="text-3xl sm:text-4xl text-center font-bold text-accent mb-6">
+                    <h2 className="text-3xl sm:text-4xl text-center font-semibold text-accent mb-6">
                         Precision Attendance. Powered by <br /> Geo-fencing
                     </h2>
                     <p className="max-w-3xl mx-auto text-center text-accent">

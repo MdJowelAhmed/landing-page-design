@@ -52,8 +52,8 @@ export default function DualFactor() {
 
     return (
         <section className="py-20 bg-white">
-            <section className="py-12 sm:py-16 bg-gradient-to-b from-cyan-50 to-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="max-w-7xl mx-auto rounded-2xl py-6 lg:py-12 bg-gradient-to-b from-cyan-50 to-white">
+                <div className=" px-4 sm:px-6 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -61,10 +61,10 @@ export default function DualFactor() {
                         transition={{ duration: 0.5 }}
                         className="text-center mb-12"
                     >
-                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-accent">
                             How Dual-Factor Validation Works
                         </h2>
-                        <p className="mt-3 text-sm sm:text-base text-gray-600 max-w-3xl mx-auto">
+                        <p className="mt-3 text-sm sm:text-base text-accent max-w-3xl mx-auto">
                             The Duty Hour App delivers verified attendance through a dual-factor system: employees log in only when
                             within designated geo-fenced locations and connected to specific Wi-Fi SSIDs.
                         </p>

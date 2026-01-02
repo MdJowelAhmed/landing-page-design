@@ -16,7 +16,7 @@ export default function ServicesContent() {
       <DualFactor />
 
       {/* Download App Banner */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-linear-to-r from-teal-600 to-teal-500 h-[398px] p-10">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-linear-to-r from-primary to-primary-foreground rounded-2xl h-[398px] p-10">
         <div className="">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Text Content */}
@@ -27,18 +27,18 @@ export default function ServicesContent() {
               transition={{ duration: 0.6 }}
               className="text-white"
             >
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-6 text-white">
                 Download The Duty Hour <br /> Mobile App
               </h2>
-              <p className="text-sm  mb-8 text-teal-50">
+              <p className="text-sm  mb-8 text-white">
                 Get the power of accurate time tracking and compliance
                 on-the-go, ensuring <br /> save-ins sources with one-tap logging.
               </p>
               <div>
-                <h4 className="text-lg font-semibold mb-4">Download Now</h4>
+                  <h4 className="text-lg font-semibold mb-4 text-white">Download Now</h4>
                 <div className="flex flex-wrap gap-3">
                   <Link href="#" className="inline-block">
-                    <div className="flex items-center gap-2 bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+                    <div className="flex items-center gap-2 bg-secondary text-white px-5 py-2 rounded-lg hover:bg-secondary transition-colors">
                       <svg
                         className="w-7 h-7"
                         viewBox="0 0 24 24"
@@ -53,7 +53,7 @@ export default function ServicesContent() {
                     </div>
                   </Link>
                   <Link href="#" className="inline-block">
-                    <div className="flex items-center gap-2 bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+                    <div className="flex items-center gap-2 bg-secondary text-white px-5 py-2 rounded-lg hover:bg-secondary transition-colors">
                       <svg
                         className="w-7 h-7"
                         viewBox="0 0 24 24"
@@ -103,10 +103,10 @@ export default function ServicesContent() {
             transition={{ duration: 0.5 }}
             className="text-center mb-12"
           >
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-accent max-w-4xl mx-auto">
               Get essential insights & powerful tools for work-life balance
             </h2>
-            <p className="mt-4 text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto">
+            <p className="mt-4 text-sm sm:text-base text-accent max-w-3xl mx-auto">
               Empowering professionals to master their time, ensure compliance,
               and track performance.
             </p>
@@ -131,10 +131,10 @@ export default function ServicesContent() {
                 />
               </div>
               <div className="text-start pl-8 my-6">
-                <div className="text-sm md:text-xl lg:font-bold  mb-3">
+                <div className="text-sm md:text-xl lg:font-bold text-accent mb-3">
                 Navigating complex shifts: How the Duty Hour App simplifies your work schedule
                 </div>
-                <div className="text-xs  ">
+                <div className="text-xs text-accent">
                 Maximize productivity: Strategies to optimize your tracked hours
                 </div>
               </div>
@@ -160,10 +160,10 @@ export default function ServicesContent() {
                   />{" "}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">
+                  <h3 className="text-xl font-bold text-accent mb-4">
                     Ready to take control of your professional time?
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-accent leading-relaxed">
                     The Duty Hour App is the single tool you need to confidently
                     manage your shifts, stay compliant, and find your ideal
                     work-life balance.
@@ -183,12 +183,12 @@ export default function ServicesContent() {
                   />{" "}
                 </div>
                 <div>
-                <h3 className="text-xl font-bold text-foreground mb-4">
+                <h3 className="text-xl font-bold text-accent mb-4">
                   Why Accurate Time Tracking Matters: Maximizing productivity &
                   avoiding burnout
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  <span className="font-semibold text-foreground">
+                <p className="text-sm text-accent leading-relaxed">
+                  <span className="font-semibold text-accent">
                     Maximizes Productivity:
                   </span>{" "}
                   Identify time-sinks and optimize your peak performance hours
