@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function HRDashboardSection() {
     return (
-        <section className="py-20 bg-[#F8F6F3]">
+        <section className="py-20 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <motion.div

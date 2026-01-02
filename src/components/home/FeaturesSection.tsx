@@ -66,7 +66,7 @@ const itemVariants = {
 
 export default function FeaturesSection() {
     return (
-        <section className="py-20 ">
+        <section className="pt-20 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <motion.div
@@ -76,8 +76,8 @@ export default function FeaturesSection() {
                     transition={{ duration: 0.5 }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-3xl sm:text-4xl font-bold text-[#1E293B]">
-                        Why Choose <span className="text-[#0D9488]">Duty Hour App</span>
+                    <h2 className="text-3xl sm:text-4xl font-bold text-accent">
+                        Why Choose <span className="text-accent-foreground">Duty Hour App</span>
                     </h2>
                 </motion.div>
 
@@ -97,16 +97,16 @@ export default function FeaturesSection() {
                         >
                             {/* Icon */}
                             <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 bg-[#F8F6F3] group-hover:bg-white/20 transition-all duration-500 ease-in-out">
-                                <div className="text-[#0D9488] group-hover:text-white transition-colors duration-500 ease-in-out">
+                                <div className="text-accent-foreground group-hover:text-white transition-colors duration-500 ease-in-out">
                                     {feature.icon}
                                 </div>
                             </div>
 
                             {/* Content */}
-                            <h3 className="text-lg font-semibold mb-2 text-[#1E293B] group-hover:text-white transition-colors duration-500 ease-in-out">
+                            <h3 className="text-lg font-semibold mb-2 text-accent group-hover:text-white transition-colors duration-500 ease-in-out">
                                 {feature.title}
                             </h3>
-                            <p className="text-sm leading-relaxed text-[#64748B] group-hover:text-white/90 transition-colors duration-500 ease-in-out">
+                            <p className="text-sm leading-relaxed text-accent group-hover:text-white/90 transition-colors duration-500 ease-in-out ">
                                 {feature.description}
                             </p>
                         </motion.div>
@@ -119,9 +119,9 @@ export default function FeaturesSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="mt-12 text-center max-w-4xl mx-auto"
+                    className="mt-12 text-center max-w-4xl "
                 >
-                    <p className="text-sm text-[#64748B] leading-relaxed">
+                    <p className="text-sm text-accent leading-relaxed text-start">
                         The Duty Hour App is engineered for absolute operational integrity, providing the most accurate, fraud-proof attendance data available. We offer smart, scalable HRM control designed for maximum efficiency.
                     </p>
                 </motion.div>
