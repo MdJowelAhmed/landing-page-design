@@ -100,14 +100,14 @@ export default function HeroSection() {
 
                                     <div
                                         
-                                        className="bg-[#fff] rounded-full p-5 mb-3"
+                                        className="bg-[#fff] shadow-lg rounded-full p-5 mb-3"
                                     >
 
                                        <motion.div
                                         animate={{ y: [-2, 8, -2] }}
                                         transition={{ duration: 1.5, repeat: Infinity }}
                                        >
-                                        <FaAnglesDown className="w-10 h-10" />
+                                        <FaAnglesDown className="w-10 h-10 text-blue-700" />
                                        </motion.div>
                                     </div>
 
