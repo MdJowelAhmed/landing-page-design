@@ -89,11 +89,11 @@ const SecurityCompliance = () => {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <p className="text-sm text-gray-600 mb-3">Security & Compliance</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <p className="text-sm text-primary mb-3">Security & Compliance</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-accent mb-4">
               Accreditation-Grade Security from Day One
             </h2>
-            <p className="text-base text-gray-700 max-w-4xl">
+            <p className="text-base text-accent max-w-4xl">
               Built with healthcare-grade safeguards so programs, trainees, and
               admins can trust how data is collected, stored, and accessed.
             </p>
@@ -110,15 +110,15 @@ const SecurityCompliance = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="p-6 rounded-xl border border-teal-200 bg-white hover:border-teal-400 transition-all duration-300"
+                className="p-6 rounded-xl border border-primary bg-white hover:border-primary transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center mb-4">
                   {value.icon}
                 </div>
-                <h4 className="text-lg font-bold text-teal-600 mb-3">
+                <h4 className="text-lg font-bold text-primary mb-3">
                   {value.title}
                 </h4>
-                <p className="text-sm text-gray-700 leading-relaxed">
+                <p className="text-sm text-accent leading-relaxed">
                   {value.description}
                 </p>
               </motion.div>

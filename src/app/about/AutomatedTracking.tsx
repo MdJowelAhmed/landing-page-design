@@ -90,11 +90,11 @@ const AutomatedTracking = () => {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <p className="text-sm text-gray-600 mb-3">What We Do</p>
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+            <p className="text-sm text-primary mb-3">What We Do</p>
+            <h2 className="text-2xl lg:text-3xl font-bold text-accent mb-4">
             Automated Tracking, Compliance, and Well-Being—In One Platform
             </h2>
-            <p className="text-sm text-gray-700 max-w-4xl">
+            <p className="text-sm text-accent max-w-4xl">
               Duty Hour App makes duty-hour management invisible and
               intelligent, combining background automation with AI-driven
               insights and wellness support.
@@ -113,17 +113,17 @@ const AutomatedTracking = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="p-4 rounded-xl border border-teal-200 bg-white hover:border-teal-400 transition-all duration-300"
+                className="p-4 rounded-xl border border-primary bg-white hover:border-primary transition-all duration-300"
               >
                 <div
                   className={`w-12 h-12 rounded-full  flex items-center justify-center mb-3`}
                 >
                   {feature.icon}
                 </div>
-                <h3 className="text-lg font-bold text-[#4E9DAB] mb-3">
+                <h3 className="text-lg font-bold text-primary mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-[#4E9DAB] leading-relaxed">
+                <p className="text-sm text-accent leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>

@@ -18,13 +18,13 @@ const OurTeam = () => {
               viewport={{ once: true }}
               className="flex flex-col justify-center"
             >
-              <p className="text-sm text-gray-600 mb-3">Our Team</p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+              <p className="text-sm text-primary mb-3">Our Team</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-accent">
                 Meet Our Creative Consultant
               </h2>
               {/* Image placeholder on left side */}
-              <div className="mt-8 w-full h-96 bg-gray-200 rounded-xl flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
+              <div className="mt-8 w-full h-96 bg-primary rounded-xl flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center text-primary-foreground">
                   <div className="text-center">
                     <svg
                       className="w-24 h-24 mx-auto mb-4"
@@ -52,25 +52,25 @@ const OurTeam = () => {
               viewport={{ once: true }}
               className="flex flex-col justify-center mt-12"
             >
-              <h3 className="text-2xl sm:text-3xl font-bold text-teal-600 mb-2">
+              <h3 className="text-2xl sm:text-3xl font-bold text-accent-foreground mb-2">
                 Mark Bolden
               </h3>
-              <p className="text-lg text-gray-600 mb-6">Creative Consultant</p>
+              <p className="text-lg text-accent mb-6">Creative Consultant</p>
 
               <div className="space-y-4 mb-6">
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-base text-accent leading-relaxed">
                   For 16 years, Mark worked inside Graduate Medical Education,
                   starting as a program coordinator and then manager, always
                   focused on finding efficiencies that give physicians more time
                   for what matters most.
                 </p>
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-base text-accent leading-relaxed">
                   As a single father, he experienced firsthand how manual
                   tracking steals precious moments from families. That personal
                   frustration became the inspiration for the automated tracking
                   at the heart of the Duty Hour App.
                 </p>
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-base text-accent leading-relaxed">
                   Today, as Creative Consultant, Mark leads product vision,
                   user-experience design, and compliance mapping. He brings
                   together his passion for education, technology, and physician
@@ -87,7 +87,7 @@ const OurTeam = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className="px-3 py-1 bg-teal-100 text-gray-700 rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-primary text-accent rounded-full text-sm font-medium"
                   >
                     {tag}
                   </motion.span>
@@ -103,10 +103,10 @@ const OurTeam = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-accent mb-4">
               Ready to Protect Your Residents—and Your Accreditation?
             </h2>
-            <p className="text-base text-gray-700  mx-auto mb-8">
+            <p className="text-base text-accent  mx-auto mb-8">
               See how automated duty-hour tracking can free your trainees to
               focus on learning and patient care, while giving your program the
               data and safeguards it needs.
@@ -118,19 +118,19 @@ const OurTeam = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-[#4E9DAB] to-[#336C79] text-white font-semibold rounded-lg text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                className="px-8 py-4 bg-gradient-to-r from-primary to-primary-foreground text-white font-semibold rounded-lg text-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Start Your Free Trial
               </motion.button>
 
               {/* App Store Buttons */}
               <div className="flex gap-2 flex-col font-semibold ">
-                <p className="text-sm text-[#091A2F] mb-2 text-start">Download Now</p>
+                <p className="text-sm text-secondary mb-2 text-start">Download Now</p>
                 <div className="flex gap-4 justify-center items-center">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex justify-start items-center gap-2 px-4 py-[6px] bg-[#091A2F] text-white rounded-lg hover:bg-[#091A2F] transition-colors"
+                    className="flex justify-start items-center gap-2 px-4 py-[6px] bg-secondary text-white rounded-lg hover:bg-secondary transition-colors"
                   >
                     <svg
                       className="w-6 h-6"
@@ -150,7 +150,7 @@ const OurTeam = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex justify-start items-center gap-2 px-4 py-[6px] bg-[#091A2F] text-white rounded-lg hover:bg-[#091A2F] transition-colors"
+                      className="flex justify-start items-center gap-2 px-4 py-[6px] bg-secondary text-white rounded-lg hover:bg-secondary transition-colors"
                   >
                     <svg
                       className="w-6 h-6"
