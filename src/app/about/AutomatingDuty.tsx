@@ -21,11 +21,11 @@ const AutomatingDuty = () => {
             transition={{ duration: 0.6 }}
             className="col-span-7 "
           >
-            <h2 className="text-xl sm:text-2xl lg:text-3xl w-5xl font-bold text-gray-900 mb-6 leading-tight  ">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl w-5xl font-bold text-accent mb-6 leading-tight  ">
               Automating Duty-Hour Tracking to Empower Tomorrow’s Physicians
             </h2>
 
-            <p className="text-lg text-gray-700 mb-10 leading-relaxed">
+            <p className="text-lg text-accent mb-10 leading-relaxed">
               Secure, AI-driven work-hour logging that frees residents and
               fellows to focus on patient care—and protects their well-being and
               your accreditation.
@@ -50,7 +50,7 @@ const AutomatingDuty = () => {
                   <IoMdTimer className="w-6 h-6 " />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">
+                  <p className="text-sm font-semibold text-accent">
                     Invisible, automatic tracking
                   </p>
                 </div>
@@ -61,7 +61,7 @@ const AutomatingDuty = () => {
                   <GoShieldCheck className="w-6 h-6 " />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">
+                  <p className="text-sm font-semibold text-accent">
                     Accreditation-grade compliance
                   </p>
                 </div>
@@ -72,7 +72,7 @@ const AutomatingDuty = () => {
                   <IoHeartOutline className="w-6 h-6 " />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">
+                  <p className="text-sm font-semibold text-accent">
                     Built for resident well-being
                   </p>
                 </div>
@@ -80,7 +80,7 @@ const AutomatingDuty = () => {
             </div>
 
             <div className="flex flex-wrap items-center gap-6">
-              <button className="bg-gradient-to-r from-[#4E9DAB] to-[#336C79] hover:bg-gradient-to-r hover:from-[#336C79] hover:to-[#4E9DAB] text-white font-semibold px-10 py-4 rounded-xl text-base transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105">
+              <button className="bg-gradient-to-r from-primary to-primary-foreground  text-white font-semibold px-10 py-4 rounded-xl text-base transition-all duration-200 shadow-md hover:shadow-xl hover:scale-105">
                 Start Your Free Trial
               </button>
               <a
@@ -114,8 +114,8 @@ const AutomatingDuty = () => {
             className="relative col-span-5 mt-28"
           >
             {/* Decorative dotted arc */}
-            <div className="absolute top-1 -right-3 w-48 h-48 border-2 border-dashed border-teal-700 rounded-full opacity-60"></div>
-            <div className="absolute -top-6 -right-8 w-60 h-60 border-2 border-dashed border-teal-700 rounded-full opacity-60"></div>
+            <div className="absolute top-1 -right-3 w-48 h-48 border-2 border-dashed border-primary rounded-full opacity-60"></div>
+            <div className="absolute -top-6 -right-8 w-60 h-60 border-2 border-dashed border-primary-foreground rounded-full opacity-60"></div>
 
             <div className="bg-white rounded-3xl shadow-2xl p-4 lg:p-5 relative">
               <div className="flex items-start justify-between mb-">
@@ -183,7 +183,7 @@ const AutomatingDuty = () => {
                         cx="72"
                         cy="72"
                         r="60"
-                        stroke="#0d9488"
+                        stroke="#4E9DAB"
                         strokeWidth="10"
                         fill="none"
                         strokeDasharray={`${2 * Math.PI * 60}`}
@@ -206,7 +206,7 @@ const AutomatingDuty = () => {
               </div>
 
               {/* Tip text */}
-              <p className="text-xs text-start text-gray-500 text-right mt-4">
+              <p className="text-xs text-start text-accent  ">
                 Tip: micro-nap recommended - consider early sign-out
               </p>
             </div>

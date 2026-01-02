@@ -28,18 +28,18 @@ const ManualDocumentation = () => {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <p className="text-sm text-gray-600 mb-3">Our Story</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#091A2F] mb-6">
+            <p className="text-sm text-accent mb-3">Our Story</p>
+            <h2 className="text-3xl sm:text-4xl font-semibold text-accent mb-6">
               From Manual Documentation to Invisible Tracking
             </h2>
-            <p className="text-base text-gray-700 max-w-4xl mb-4">
+            <p className="text-base text-accent max-w-4xl mb-4">
               For more than a decade, graduate-medical-education professionals
               have juggled patient care, teaching and the tedious chore of
               manual duty hour documentation. In 2025, after 16 years working
               inside residency programs, Mark Bolden turned that frustration
               into a solution: the Duty Hour App.
             </p>
-            <p className="text-base text-gray-700 max-w-4xl">
+            <p className="text-base text-accent max-w-4xl">
               From day one, our goal has been simple make work-hour tracking
               invisible and instant, so trainees devote every spare minute to
               learning and healing.
@@ -53,7 +53,7 @@ const ManualDocumentation = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-6 border-l-3 border-teal-300"
+              className="space-y-6 border-l-3 border-primary"
             >
               {timeline.map((item, index) => (
                 <motion.div
@@ -66,14 +66,14 @@ const ManualDocumentation = () => {
                 >
                   <div className="shrink-0 ">
                     {/* Teal circular icon with inner circle (target/record button style) */}
-                    <div className="w-5 h-5 rounded-full border-3 border-teal-500 flex items-center justify-center">
-                      <div className="w-2 h-2 rounded-full bg-teal-500"></div>
+                    <div className="w-5 h-5 rounded-full border-3 border-primary flex items-center justify-center">
+                      <div className="w-2 h-2 rounded-full bg-primary"></div>
                     </div>
                   </div>
                   <div className="flex-1 ">
-                    <p className="text-base text-gray-700 leading-relaxed">
+                    <p className="text-base text-accent-foreground leading-relaxed">
                       <h3 className="font-semibold">{item.year}:</h3>{" "}
-                     <p className="text-sm text-gray-700 leading-relaxed"> {item.text}</p>
+                     <p className="text-sm text-accent leading-relaxed"> {item.text}</p>
                     </p>
                   </div>
                 </motion.div>
@@ -88,10 +88,10 @@ const ManualDocumentation = () => {
               className="lg:pt-0"
             >
               <div className="bg-white rounded-2xl p-6 lg:p-8  border border-gray-200">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">
+                <h3 className="text-lg font-bold text-accent mb-4">
                   Our promise:
                 </h3>
-                <p className="text-base text-gray-700 leading-relaxed">
+                <p className="text-base text-accent leading-relaxed">
                   We empower graduate medical education programs and their
                   resident physicians through automated work-hour tracking and
                   data-driven solutions that save critical time for clinical

@@ -134,10 +134,10 @@ const MissionAndVision = () => {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <p className="text-sm text-gray-600 mb-3">
+            <p className="text-sm text-accent-foreground mb-3">
               Mission, Vision & Values
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl sm:text-4xl font-bold text-accent">
               What Guides the Duty Hour App
             </h2>
           </motion.div>
@@ -164,10 +164,10 @@ const MissionAndVision = () => {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-teal-600 mb-4">
+                  <h3 className="text-2xl font-bold text-primary mb-4">
                     Mission
                   </h3>
-                  <p className="text-sm text-[#4E9DAB] leading-relaxed">
+                  <p className="text-sm text-accent leading-relaxed">
                     We empower graduate medical education programs and their
                     resident physicians through automated work-hour tracking and
                     data-driven solutions that save critical time for clinical
@@ -200,10 +200,10 @@ const MissionAndVision = () => {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-orange-600 mb-4">
+                  <h3 className="text-2xl font-bold text-orange-500 mb-4">
                     Vision
                   </h3>
-                  <p className="text-sm text-[#4E9DAB] leading-relaxed">
+                  <p className="text-sm text-accent leading-relaxed">
                     A health care ecosystem in which every physician-in-training
                     is respected, supported, and equipped to excel—freed from
                     administrative burdens through automated work-hour tracking
@@ -218,7 +218,7 @@ const MissionAndVision = () => {
 
           {/* Values Grid */}
           <div className="mb-8">
-            <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
+            <h3 className="text-3xl sm:text-4xl font-bold text-accent mb-8">
               Our Values
             </h3>
             <motion.div
@@ -232,13 +232,13 @@ const MissionAndVision = () => {
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  className="p-6 rounded-xl bg-white shadow-md hover:border border-teal-500 transition-all duration-300"
+                  className="p-6 rounded-xl bg-white shadow-md hover:border border-primary transition-all duration-300"
                 >
                   <div className="mb-4">{value.icon}</div>
-                  <h4 className={`text-lg font-bold mb-3 text-[#4E9DAB]`}>
+                  <h4 className={`text-lg font-bold mb-3 text-primary`}>
                     {value.title}
                   </h4>
-                  <p className="text-sm text-[#4E9DAB] leading-relaxed">
+                  <p className="text-sm text-accent leading-relaxed">
                     {value.description}
                   </p>
                 </motion.div>
