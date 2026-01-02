@@ -62,14 +62,14 @@
   --primary-foreground: #336C79;
 
   /* Secondary - Orange */
-  --secondary: #EA580C;
+  --secondary: #091A2F;
   --secondary-foreground: #FFFFFF;
 
   --muted: #F1F5F9;
   --muted-foreground: #64748B;
 
-  --accent: #F1F5F9;
-  --accent-foreground: #1E293B;
+  --accent: #0B0E0F;
+  --accent-foreground: #336C79;
 
   --destructive: #EF4444;
 

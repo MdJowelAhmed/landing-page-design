@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -24,11 +25,14 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             {/* Logo Icon */}
-            <div className="w-10 h-10 rounded-full border-2 border-[#0D9488] flex items-center justify-center">
-              <svg className="w-6 h-6 text-[#0D9488]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 6v6l4 2" />
-              </svg>
+            <div className="w-16 h-16  flex items-center justify-center">
+              <Image
+                src="/assets/navbar-logo.png"
+                alt="Duty Hour App"
+                width={64}
+                height={64}
+                // className="w-10 h-10 rounded-full border-2 border-[#0D9488] flex items-center justify-center"
+              />
             </div>
             <span className="text-xl font-bold text-[#1E293B]">
               Duty Hour App
@@ -44,9 +48,9 @@ export default function Navbar() {
                   <motion.div
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${isActive
-                        ? "text-[#0D9488] font-semibold"
-                        : "text-[#64748B] hover:text-[#1E293B]"
+                    className={`px-4 py-2 rounded-lg  font-medium transition-all duration-200 ${isActive
+                        ? "text-accent-foreground font-bold"
+                        : "text-secondary hover:text-[#1E293B]"
                       }`}
                   >
                     {link.label}
@@ -58,8 +62,8 @@ export default function Navbar() {
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
-            <Link href="/contact">
-              <Button className="bg-[#0D9488] hover:bg-[#0F766E] text-white rounded-full px-6 shadow-lg shadow-teal-500/20">
+            <Link target="_blank" href="https://business.dutyhourapp.com/">
+              <Button className="bg-gradient-to-r from-primary to-primary-foreground text-white rounded-sm px-6 py-5 shadow-lg shadow-teal-500/20">
                 Start Your Free Trial
               </Button>
             </Link>

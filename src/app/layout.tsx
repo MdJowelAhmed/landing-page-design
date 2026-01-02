@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} ${poppins.variable} antialiased`}>
-        <div className="relative min-h-screen flex flex-col bg-[#F8F6F3]">
+        <div className="relative min-h-screen flex flex-col bg-[#ffffff]">
           <Navbar />
           <main className="flex-1 pt-16">{children}</main>
           <Footer />

@@ -25,11 +25,11 @@ export default function HeroSection() {
                     >
                         {/* Main Heading */}
                         <h1 className="text-4xl sm:text-5xl lg:text-5xl  tracking-tight leading-tight lg:mb-16">
-                            <span className="text-[#1E293B]">Your Workforce</span>
+                            <span className="text-accent">Your Workforce</span>
                             <br />
-                            <span className="text-[#0D9488] font-bold ml-10 lg:ml-16 my-4">Your Control</span>
+                            <span className="text-accent-foreground font-bold ml-10 lg:ml-16 my-4">Your Control</span>
                             <br />
-                            <span className="text-[#1E293B]">Perfected Attendance</span>
+                            <span className="text-accent">Perfected Attendance</span>
                         </h1>
 
                         <div className="flex justify-between items-center gap-5 ">
@@ -47,7 +47,7 @@ export default function HeroSection() {
                                     <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (21).png" alt="Image" height={100} width={100} />
                                     <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (22).png" alt="Image" height={100} width={100} />
                                 </div>
-                                <Link href="/contact">
+                                <Link target="_blank" href="https://business.dutyhourapp.com">
                                     <Button className="bg-gradient-to-r from-primary to-primary-foreground text-white rounded-lg px-5 py-6 text-base shadow-lg shadow-teal-500/20">
                                         Start Your Free Trial
                                     </Button>
@@ -67,8 +67,8 @@ export default function HeroSection() {
 
 
                             <div className="text-center">
-                                <div className="text-3xl font-bold text-[#1E293B]">34.0k+</div>
-                                <div className="text-xs text-[#64748B]">Attendance Records Processed</div>
+                                <div className="text-3xl font-bold text-accent">34.0k+</div>
+                                <div className="text-xs text-accent">Attendance Records Processed</div>
                             </div>
                         </div>
 
@@ -85,8 +85,8 @@ export default function HeroSection() {
                             <div
                                 className="w-[350px] flex justify-between items-center">
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-[#1E293B]">12.0k+</div>
-                                    <div className="text-xs text-[#64748B]">Employees Managed</div>
+                                    <div className="text-3xl font-bold text-accent">12.0k+</div>
+                                    <div className="text-xs text-accent">Employees Managed</div>
                                 </div>
 
 
@@ -95,7 +95,7 @@ export default function HeroSection() {
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{ duration: 0.5, delay: 0.6 }}
-                                    className=" gap-2 text-[#64748B] cursor-pointer hover:text-[#0D9488] transition-colors"
+                                    className=" gap-2 text-accent cursor-pointer hover:text-accent-foreground transition-colors"
                                 >
 
                                     <div
@@ -149,7 +149,7 @@ export default function HeroSection() {
 
                 >
   <div className="mt-10 text-center lg:text-left  max-w-4xl">
-                                <p className="text-sm text-[#64748B] leading-relaxed">
+                                <p className="text-sm text-accent leading-relaxed">
                                     Take command of your institution's attendance. The Duty Hour App provides business admins with a powerful HRM dashboard, enabled by geo-fenced and Wi-Fi-verified check-ins. Ensure every minute counts, manage employees effortlessly, and secure your operations with unparalleled accuracy.
                                 </p>
                             </div>

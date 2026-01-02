@@ -18,33 +18,33 @@ export default function HomeFeatureSection() {
 
                         {/* Main Heading Group */}
                         <div className=" flex flex-col items-center mt-10">
-                            <h2 className="text-3xl font-medium text-foreground">Total Control</h2>
+                            <h2 className="text-3xl font-medium text-accent">Total Control</h2>
 
                         </div>
                         <div className="flex justify-between w-[500px] items-center  ">
                             {/* Top Stat */}
                             <div className="flex flex-col">
-                                <h3 className="text-4xl font-bold text-foreground">12.0k+</h3>
-                                <p className="text-muted-foreground text-sm">Employees Managed</p>
+                                <h3 className="text-4xl font-bold text-accent">12.0k+</h3>
+                                <p className="text-accent  text-sm">Employees Managed</p>
                             </div>
                             <div className="flex flex-col gap-2">
-                                <h2 className="text-2xl font-bold text-teal-600">Instant Setup</h2>
-                                <h2 className="text-2xl font-bold text-foreground">Zero Attendance Fraud</h2>
+                                <h2 className="text-2xl font-bold text-accent-foreground">Instant Setup</h2>
+                                <h2 className="text-2xl font-bold text-accent">Zero Attendance Fraud</h2>
                             </div>
                         </div>
 
                         <div className="flex justify-between w-[570px] items-center ml-20  gap-10">
                             {/* Bottom Stat */}
                             <div className="flex flex-col">
-                                <h3 className="text-4xl font-bold text-foreground">42.0k+</h3>
-                                <p className="text-muted-foreground text-sm">Employee Overview</p>
+                                <h3 className="text-4xl font-bold text-accent">42.0k+</h3>
+                                <p className="text-accent  text-sm">Employee Overview</p>
                             </div>
 
                             {/* Text Content inside Dark Area */}
                             <motion.p
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
-                                className=" text-sm leading-relaxed max-w-2xl mb-8"
+                                className=" text-sm leading-relaxed max-w-2xl mb-8 text-accent text-justify"
                             >
                                 Your subscribed HRM dashboard is the command center for your business.
                                 Easily define your institution&apos;s geo-fenced location and Wi-Fi credentials,
