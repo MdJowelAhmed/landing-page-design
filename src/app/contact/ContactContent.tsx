@@ -3,8 +3,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 
 export default function ContactContent() {
     const [formData, setFormData] = useState({
@@ -17,20 +15,44 @@ export default function ContactContent() {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [error, setError] = useState<string | null>(null);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
+        setError(null); // Clear error when user types
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        // Simulate submission
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-        setFormData({ name: "", email: "", phone: "", location: "", subject: "", message: "" });
+        setError(null);
+
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.error || "Failed to send message");
+            }
+
+            // Success
+            setIsSubmitted(true);
+            setFormData({ name: "", email: "", phone: "", location: "", subject: "", message: "" });
+        } catch (err) {
+            const errorMessage = err instanceof Error ? err.message : "Something went wrong. Please try again.";
+            setError(errorMessage);
+            console.error("Error submitting form:", err);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -119,7 +141,7 @@ export default function ContactContent() {
                                         </svg>
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
-                                    <p className="text-gray-500 mb-6">Thanks for reaching out! We'll allow 24-48 hours for a response.</p>
+                                    <p className="text-gray-500 mb-6">Thanks for reaching out! We&apos;ll allow 24-48 hours for a response.</p>
                                     <Button
                                         onClick={() => setIsSubmitted(false)}
                                         className="bg-[#388E96] hover:bg-[#2C7A82] text-white"
@@ -209,11 +231,17 @@ export default function ContactContent() {
                                         />
                                     </div>
 
+                                    {error && (
+                                        <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+                                            {error}
+                                        </div>
+                                    )}
+
                                     <div className="flex justify-end pt-4">
                                         <Button
                                             type="submit"
                                             disabled={isSubmitting}
-                                            className="bg-[#388E96] hover:bg-[#2C7A82] text-white px-8 py-6 text-base rounded-xl"
+                                            className="bg-[#388E96] hover:bg-[#2C7A82] text-white px-8 py-6 text-base rounded-xl disabled:opacity-50 disabled:cursor-not-allowed"
                                         >
                                             {isSubmitting ? "Sending..." : "Send Message"}
                                         </Button>

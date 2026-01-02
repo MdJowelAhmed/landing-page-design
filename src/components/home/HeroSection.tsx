@@ -98,14 +98,18 @@ export default function HeroSection() {
                                     className=" gap-2 text-[#64748B] cursor-pointer hover:text-[#0D9488] transition-colors"
                                 >
 
-                                    <motion.div
-                                        animate={{ y: [0, 5, 0] }}
-                                        transition={{ duration: 1.5, repeat: Infinity }}
-                                        className="bg-[#fff] rounded-full p-5 mb-5"
+                                    <div
+                                        
+                                        className="bg-[#fff] rounded-full p-5 mb-3"
                                     >
 
-                                        <FaAnglesDown className="w-8 h-8" />
-                                    </motion.div>
+                                       <motion.div
+                                        animate={{ y: [-2, 8, -2] }}
+                                        transition={{ duration: 1.5, repeat: Infinity }}
+                                       >
+                                        <FaAnglesDown className="w-10 h-10" />
+                                       </motion.div>
+                                    </div>
 
                                     <span className="text-sm font-medium mt-4">Learn More</span>
                                 </motion.div></div>
