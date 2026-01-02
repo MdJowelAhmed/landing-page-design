@@ -160,7 +160,7 @@ export default function ContactContent() {
                                                 name="name"
                                                 value={formData.name}
                                                 onChange={handleChange}
-                                                placeholder="Sabbir Ahmed"
+                                                placeholder="Enter your name"
                                                 className="w-full border-b border-gray-200 py-3 text-gray-800 placeholder:text-gray-300 focus:border-[#388E96] focus:outline-none transition-colors"
                                             />
                                         </div>
@@ -172,7 +172,7 @@ export default function ContactContent() {
                                                 name="email"
                                                 value={formData.email}
                                                 onChange={handleChange}
-                                                placeholder="Sabbir Ahmed"
+                                                placeholder="Enter your email"
                                                 className="w-full border-b border-gray-200 py-3 text-gray-800 placeholder:text-gray-300 focus:border-[#388E96] focus:outline-none transition-colors"
                                             />
                                         </div>
@@ -187,7 +187,7 @@ export default function ContactContent() {
                                                 name="phone"
                                                 value={formData.phone}
                                                 onChange={handleChange}
-                                                placeholder="Sabbir Ahmed"
+                                                placeholder="Enter your phone number"
                                                 className="w-full border-b border-gray-200 py-3 text-gray-800 placeholder:text-gray-300 focus:border-[#388E96] focus:outline-none transition-colors"
                                             />
                                         </div>
@@ -199,7 +199,7 @@ export default function ContactContent() {
                                                 name="location"
                                                 value={formData.location}
                                                 onChange={handleChange}
-                                                placeholder="Sabbir Ahmed"
+                                                placeholder="Enter your location"
                                                 className="w-full border-b border-gray-200 py-3 text-gray-800 placeholder:text-gray-300 focus:border-[#388E96] focus:outline-none transition-colors"
                                             />
                                         </div>
@@ -213,7 +213,7 @@ export default function ContactContent() {
                                             name="subject"
                                             value={formData.subject}
                                             onChange={handleChange}
-                                            placeholder="Sabbir Ahmed"
+                                            placeholder="Enter your subject"
                                             className="w-full border-b border-gray-200 py-3 text-gray-800 placeholder:text-gray-300 focus:border-[#388E96] focus:outline-none transition-colors"
                                         />
                                     </div>
