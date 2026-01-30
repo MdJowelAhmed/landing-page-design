@@ -7,7 +7,7 @@ const OurTeam = () => {
   return (
     <div>
       {/* Our Team Section */}
-      <section className="py-16 sm:py-20 ">
+      <section className="mb-10 lg:py-20 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top Section - Mark Bolden's Profile */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
@@ -103,10 +103,10 @@ const OurTeam = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-accent mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent mb-4">
               Ready to Protect Your Residents—and Your Accreditation?
             </h2>
-            <p className="text-base text-accent  mx-auto mb-8">
+            <p className="text-base text-accent text-justify md:text-center mx-auto mb-8">
               See how automated duty-hour tracking can free your trainees to
               focus on learning and patient care, while giving your program the
               data and safeguards it needs.
@@ -121,7 +121,7 @@ const OurTeam = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-primary to-primary-foreground text-white font-semibold rounded-lg text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                className="lg:px-8 px-4 lg:py-4 py-2 bg-gradient-to-r from-primary to-primary-foreground text-white font-semibold rounded-lg text-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Start Your Free Trial
               </motion.a>

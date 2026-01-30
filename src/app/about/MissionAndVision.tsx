@@ -126,7 +126,7 @@ const MissionAndVision = () => {
   return (
     <div>
       {/* Mission, Vision & Values */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className=" lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -151,15 +151,16 @@ const MissionAndVision = () => {
               viewport={{ once: true }}
               className="p-5 rounded-xl border bg-white shadow-md hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="flex gap-6">
+              <div className="md:flex gap-6">
                 <div className="shrink-0">
                   {/* Teal target/bullseye icon with arrow */}
-                  <div className=" rounded-full  flex items-center justify-center">
+                  <div className=" rounded-full h-[80px] w-[80px] lg:h-[130px] lg:w-[130px] flex items-center justify-center">
                     <Image
                       src="/assets/about/Frame.svg"
                       alt="Mission"
                       width={130}
                       height={130}
+                      className="object-contain w-full h-full"
                     />
                   </div>
                 </div>
@@ -187,15 +188,16 @@ const MissionAndVision = () => {
               viewport={{ once: true }}
               className="p-8 rounded-xl bg-white border shadow-md hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="flex gap-6">
+              <div className="md:flex gap-6">
                 <div className="shrink-0">
                   {/* Orange lightbulb icon with radiating lines */}
-                  <div className=" flex items-center justify-center">
+                  <div className=" rounded-full h-[80px] w-[80px] lg:h-[130px] lg:w-[130px] flex items-center justify-center">
                     <Image
                       src="/assets/about/Frame (1).svg"
                       alt="Vision"
                       width={130}
                       height={130}
+                      className="object-contain w-full h-full"
                     />
                   </div>
                 </div>
