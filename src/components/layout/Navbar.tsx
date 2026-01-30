@@ -6,6 +6,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+// import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -19,7 +20,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+    <nav className=" top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -34,7 +35,7 @@ export default function Navbar() {
                 // className="w-10 h-10 rounded-full border-2 border-[#0D9488] flex items-center justify-center"
               />
             </div>
-            <span className="text-xl font-bold text-[#1E293B]">
+            <span className="hidden lg:block text-xl font-bold text-[#1E293B]">
               Duty Hour App
             </span>
           </Link>
@@ -48,7 +49,7 @@ export default function Navbar() {
                   <motion.div
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className={`px-4 py-2 rounded-lg  font-medium transition-all duration-200 ${isActive
+                    className={`px-2 lg:px-4 py-2 rounded-lg   font-medium transition-all duration-200 ${isActive
                         ? "text-accent-foreground font-bold"
                         : "text-secondary hover:text-[#1E293B]"
                       }`}
@@ -63,7 +64,7 @@ export default function Navbar() {
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
             <Link target="_blank" href="https://business.dutyhourapp.com/">
-              <Button className="bg-gradient-to-r from-primary to-primary-foreground text-white rounded-sm px-6 py-5 shadow-lg shadow-teal-500/20">
+              <Button className="bg-gradient-to-r from-primary to-primary-foreground text-white rounded-sm lg:px-6 lg:py-6 px-4 py-3 shadow-lg shadow-teal-500/20">
                 Start Your Free Trial
               </Button>
             </Link>
@@ -100,6 +101,8 @@ export default function Navbar() {
                 }}
                 className="w-full h-0.5 bg-[#1E293B] origin-left"
               />
+              {/* <Menu className="w-6 h-6 text-[#1E293B]" /> */}
+              {/* <X className="w-6 h-6 text-[#1E293B]" /> */}
             </motion.div>
           </button>
         </div>

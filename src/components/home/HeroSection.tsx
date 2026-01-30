@@ -13,7 +13,7 @@ export default function HeroSection() {
             {/* Decorative top bar */}
             <div className="absolute top-0 right-0 w-1/2 h-2 " />
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:pb-12 lg:py-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8">
                     {/* Left Content */}
                     <motion.div
@@ -24,7 +24,7 @@ export default function HeroSection() {
 
                     >
                         {/* Main Heading */}
-                        <h1 className="text-4xl sm:text-5xl lg:text-5xl  tracking-tight leading-tight lg:mb-16">
+                        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl  tracking-tight leading-tight lg:mb-16">
                             <span className="text-accent">Your Workforce</span>
                             <br />
                             <span className="text-accent-foreground font-bold ml-10 lg:ml-16 my-4">Your Control</span>
@@ -48,7 +48,7 @@ export default function HeroSection() {
                                     <Image className="w-10 h-10 rounded-full border-2 border-white bg-gradient-to-br from-[#0D9488] to-[#14B8A6] flex items-center justify-center text-white text-xs font-bold" src="/assets/Image (22).png" alt="Image" height={100} width={100} />
                                 </div>
                                 <Link target="_blank" href="https://business.dutyhourapp.com">
-                                    <Button className="bg-gradient-to-r from-primary to-primary-foreground text-white rounded-lg px-5 py-6 text-base shadow-lg shadow-teal-500/20">
+                                    <Button className="bg-gradient-to-r from-primary to-primary-foreground text-white rounded-lg lg:px-5 lg:py-6 px-4 py-3 text-base shadow-lg shadow-teal-500/20">
                                         Start Your Free Trial
                                     </Button>
                                 </Link>
@@ -79,11 +79,11 @@ export default function HeroSection() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
-                            className="mt-8 flex flex-wrap gap-8 justify-end"
+                            className="lg:mt-8 mt-4 flex flex-wrap lg:gap-8 gap-4 justify-end"
                         >
 
                             <div
-                                className="w-[350px] flex justify-between items-center">
+                                className="lg:w-[350px] w-full flex justify-between items-center">
                                 <div className="text-center">
                                     <div className="text-3xl font-bold text-accent">12.0k+</div>
                                     <div className="text-xs text-accent">Employees Managed</div>
@@ -128,11 +128,11 @@ export default function HeroSection() {
                         {/* Phone Mockup */}
                         <div className="relative">
                             {/* Orange Phone Frame */}
-                            <div className="relative w-[400px] sm:w-[450px] h-[550px] sm:h-[550px] lg:h-[600px]">
+                            <div className="relative w-[400px] sm:w-[450px] h-[500px] sm:h-[550px] lg:h-[600px] p">
                                 <div className="w-full h-full rounded-[32px] overflow-hidden">
                                     {/* Phone Screen Content */}
                                     <Image src="/hero.png" alt="Phone Screen" fill
-                                    className="object-cover h-[550px] sm:h-[550px] lg:h-[500px]" />
+                                    className="object-cove h-full w-full" />
                                 </div>
                             </div>
 
@@ -148,8 +148,8 @@ export default function HeroSection() {
                     transition={{ duration: 0.5, delay: 0.7 }}
 
                 >
-  <div className="mt-10 text-center lg:text-left  max-w-4xl">
-                                <p className="text-sm text-accent leading-relaxed">
+  <div className="lg:mt-10 mt-4 text-center lg:text-left  max-w-4xl">
+                                <p className="text-sm text-accent text-justify md:text-start leading-relaxed">
                                     Take command of your institution`s attendance. The Duty Hour App provides business admins with a powerful HRM dashboard, enabled by geo-fenced and Wi-Fi-verified check-ins. Ensure every minute counts, manage employees effortlessly, and secure your operations with unparalleled accuracy.
                                 </p>
                             </div>

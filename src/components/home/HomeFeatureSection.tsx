@@ -18,25 +18,25 @@ export default function HomeFeatureSection() {
 
                         {/* Main Heading Group */}
                         <div className=" flex flex-col items-center mt-10">
-                            <h2 className="text-3xl font-medium text-accent">Total Control</h2>
+                            <h2 className="lg:text-3xl font-medium text-accent">Total Control</h2>
 
                         </div>
-                        <div className="flex justify-between w-[500px] items-center  ">
+                        <div className="flex justify-between w-96 lg:w-[500px] items-center  ">
                             {/* Top Stat */}
                             <div className="flex flex-col">
-                                <h3 className="text-4xl font-bold text-accent">12.0k+</h3>
+                                <h3 className="lg:text-4xl font-bold text-accent">12.0k+</h3>
                                 <p className="text-accent  text-sm">Employees Managed</p>
                             </div>
                             <div className="flex flex-col gap-2">
-                                <h2 className="text-2xl font-bold text-accent-foreground">Instant Setup</h2>
-                                <h2 className="text-2xl font-bold text-accent">Zero Attendance Fraud</h2>
+                                <h2 className="lg:text-2xl font-bold text-accent-foreground">Instant Setup</h2>
+                                <h2 className="lg:text-2xl font-bold text-accent">Zero Attendance Fraud</h2>
                             </div>
                         </div>
 
-                        <div className="flex justify-between w-[570px] items-center ml-20  gap-10">
+                        <div className="md:flex justify-between w-96 md:w-[570px] items-center md:ml-20 gap-6 lg:gap-10 ">
                             {/* Bottom Stat */}
-                            <div className="flex flex-col">
-                                <h3 className="text-4xl font-bold text-accent">42.0k+</h3>
+                            <div className="flex flex-col mb-2  lg:mb-0">
+                                <h3 className="lg:text-4xl font-bold text-accent">42.0k+</h3>
                                 <p className="text-accent  text-sm">Employee Overview</p>
                             </div>
 
@@ -44,7 +44,7 @@ export default function HomeFeatureSection() {
                             <motion.p
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
-                                className=" text-sm leading-relaxed max-w-2xl mb-8 text-accent text-justify"
+                                className=" text-sm leading-relaxed max-w-2xl lg:mb-8 text-accent text-justify"
                             >
                                 Your subscribed HRM dashboard is the command center for your business.
                                 Easily define your institution&apos;s geo-fenced location and Wi-Fi credentials,
@@ -63,7 +63,9 @@ export default function HomeFeatureSection() {
 
 
                             {/* Dashboard Image Mockup */}
-                            <Image src="/assets/dashboard.png" alt="Dashboard" width={800} height={400} />
+                           <div className="  ">
+                           <Image src="/assets/dashboard.png" alt="Dashboard" width={800} height={200}  className="w-full h-full object-cover" />
+                           </div>
                             {/* CTA Button "Cutout" */}
 
                             <Button

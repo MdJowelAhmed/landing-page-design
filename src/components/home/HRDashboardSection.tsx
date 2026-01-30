@@ -73,8 +73,8 @@ export default function HRDashboardSection() {
                         className="relative col-span-7"
                     >
                         {/* Laptop Frame */}
-                        <div className="w-[800px] h-[700px] relative">
-                            <Image src="/assets/laptop.png" alt="HR Dashboard" width={1000} height={800} className="object-cover w-full h-full absolute -left-48 bottom-20" />
+                        <div className="w-[350px] h-[350px] md:w-[500px] md:h-[500px] lg:w-[800px] lg:h-[700px] relative">
+                            <Image src="/assets/laptop.png" alt="HR Dashboard" width={1000} height={800} className="object-cover w-full h-full absolute lg:-left-48 lg:bottom-20" />
                         </div>
                     </motion.div>
                 </div>
