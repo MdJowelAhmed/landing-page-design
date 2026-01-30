@@ -76,7 +76,7 @@ export default function FeaturesSection() {
                     transition={{ duration: 0.5 }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-3xl sm:text-4xl font-bold text-accent">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-accent">
                         Why Choose <span className="text-accent-foreground">Duty Hour App</span>
                     </h2>
                 </motion.div>
@@ -87,7 +87,7 @@ export default function FeaturesSection() {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6"
                 >
                     {features.map((feature) => (
                         <motion.div
@@ -119,7 +119,7 @@ export default function FeaturesSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="mt-12 text-center max-w-4xl "
+                    className="lg:mt-12 mt-4 text-center max-w-4xl "
                 >
                     <p className="text-sm text-accent leading-relaxed text-start">
                         The Duty Hour App is engineered for absolute operational integrity, providing the most accurate, fraud-proof attendance data available. We offer smart, scalable HRM control designed for maximum efficiency.
