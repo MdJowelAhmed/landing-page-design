@@ -14,16 +14,16 @@ export default function Footer() {
     return (
         <footer className="bg-[#091A2F] border-t border-gray-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 lg:gap-16 items-center">
                     {/* Brand Section */}
                     <div className="md:col-span-1">
-                        <Link href="/" className="flex items-center space-x-3">
+                        <Link href="/" className="flex items-center justify-center lg:justify-start space-x-3 ">
                          <Image src="/assets/footer-logo.svg" alt="Duty Hour App" width={80} height={80} />
                         </Link>
-                        <h3 className="mt-4 text-xl font-bold text-white">
+                        <h3 className="lg:mt-4 mt-2 text-xl text-center lg:text-left font-bold text-white">
                             Duty Hour App
                         </h3>
-                        <p className="text-sm text-white font-medium">
+                        <p className="text-sm text-center lg:text-left text-white font-medium">
                             Built for Operational Integrity
                         </p>
                         <p className="mt-4 text-sm text-white max-w-sm">
@@ -33,10 +33,10 @@ export default function Footer() {
 
                     {/* Content Links */}
                     <div className="md:col-span-1 md:mx-auto">
-                        <h3 className="text-sm font-semibold text-center text-white mb-4">
+                        <h3 className="text-sm font-semibold text-center text-white lg:mb-4 mb-2">
                             Content
                         </h3>
-                        <ul className="space-y-3 flex  gap-5">
+                        <ul className="space-y-3 flex justify-center lg:justify-start gap-5">
                             {footerLinks.content.map((link) => (
                                 <li key={link.href}>
                                     <Link
@@ -52,13 +52,13 @@ export default function Footer() {
 
                     {/* Download Section */}
                     <div className="md:col-span-1">
-                        <p className="text-sm text-white mb-4">
+                        <p className="text-sm text-white lg:mb-4 mb-2 ">
                             Get Exclusive News On New Features And Subscription Offers.
                         </p>
-                        <h3 className="text-sm font-semibold text-white mb-4">
+                        <h3 className="text-sm font-semibold text-white mb-4 text-center lg:text-left">
                             Download Now
                         </h3>
-                        <div className="flex flex-wrap gap-3">
+                        <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                             {/* App Store Button */}
                             <a
                                 href="#"
@@ -90,8 +90,8 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="mt-12 pt-8 border-t border-gray-200">
-                    <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
+                <div className="lg:mt-12 mt-6 px-8  pt-6 border-t border-gray-200">
+                    <div className="flex flex-col md:flex-row justify-center items-center space-y- md:space-y-0">
                         <p className="text-sm text-white">
                             © {new Date().getFullYear()} Duty Hour App. All rights reserved.
                         </p>

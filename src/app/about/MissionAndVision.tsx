@@ -137,7 +137,7 @@ const MissionAndVision = () => {
             <p className="text-sm text-accent-foreground mb-3">
               Mission, Vision & Values
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-accent">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent">
               What Guides the Duty Hour App
             </h2>
           </motion.div>
@@ -220,7 +220,7 @@ const MissionAndVision = () => {
 
           {/* Values Grid */}
           <div className="mb-8">
-            <h3 className="text-3xl sm:text-4xl font-bold text-accent mb-8">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent mb-8">
               Our Values
             </h3>
             <motion.div

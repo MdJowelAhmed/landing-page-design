@@ -20,7 +20,7 @@ const ManualDocumentation = () => {
   return (
     <div>
       {/* Our Story Timeline */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-10 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -32,14 +32,14 @@ const ManualDocumentation = () => {
             <h2 className="text-3xl sm:text-4xl font-semibold text-accent mb-6">
               From Manual Documentation to Invisible Tracking
             </h2>
-            <p className="text-base text-accent max-w-4xl mb-4">
+            <p className="text-sm text-accent max-w-4xl mb-4">
               For more than a decade, graduate-medical-education professionals
               have juggled patient care, teaching and the tedious chore of
               manual duty hour documentation. In 2025, after 16 years working
               inside residency programs, Mark Bolden turned that frustration
               into a solution: the Duty Hour App.
             </p>
-            <p className="text-base text-accent max-w-4xl">
+            <p className="text-sm text-accent max-w-4xl">
               From day one, our goal has been simple make work-hour tracking
               invisible and instant, so trainees devote every spare minute to
               learning and healing.

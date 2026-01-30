@@ -58,19 +58,19 @@ const OurTeam = () => {
               <p className="text-lg text-accent mb-6">Creative Consultant</p>
 
               <div className="space-y-4 mb-6">
-                <p className="text-base text-accent leading-relaxed">
+                <p className="text-sm text-accent leading-relaxed">
                   For 16 years, Mark worked inside Graduate Medical Education,
                   starting as a program coordinator and then manager, always
                   focused on finding efficiencies that give physicians more time
                   for what matters most.
                 </p>
-                <p className="text-base text-accent leading-relaxed">
+                <p className="text-sm text-accent leading-relaxed">
                   As a single father, he experienced firsthand how manual
                   tracking steals precious moments from families. That personal
                   frustration became the inspiration for the automated tracking
                   at the heart of the Duty Hour App.
                 </p>
-                <p className="text-base text-accent leading-relaxed">
+                <p className="text-sm text-accent leading-relaxed">
                   Today, as Creative Consultant, Mark leads product vision,
                   user-experience design, and compliance mapping. He brings
                   together his passion for education, technology, and physician
@@ -106,7 +106,7 @@ const OurTeam = () => {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent mb-4">
               Ready to Protect Your Residents—and Your Accreditation?
             </h2>
-            <p className="text-base text-accent text-justify md:text-center mx-auto mb-8">
+            <p className="text-sm text-accent text-justify md:text-center mx-auto mb-8">
               See how automated duty-hour tracking can free your trainees to
               focus on learning and patient care, while giving your program the
               data and safeguards it needs.
