@@ -41,7 +41,7 @@ export default function HRDashboardSection() {
                                 Enrol Your Institution Today
                             </p>
                         </div>
-                        <p className="text-sm text-[#0B0E0F] leading-relaxed lg:mt-12 mt-4 max-w-3xl text-justify lg:text-left ">
+                        <p className="text-sm text-[#0B0E0F] leading-relaxed lg:mt-12 mt-4 w-full lg:max-w-3xl text-justify lg:text-left ">
                             Gain complete administrative control from your centralized dashboard. Easily define geo-fencing and Wi-Fi credentials to achieve fraud-proof attendance data and total payroll integrity. Manage all subscription tiers and effortlessly onboard employees directly within the command center, allowing you to focus entirely on scaling your business.
                         </p>
 
@@ -86,13 +86,13 @@ export default function HRDashboardSection() {
                         className="relative col-span-7"
                     >
                         {/* Laptop Frame */}
-                        <div className="w-[350px] h-[350px] md:w-[500px] md:h-[500px] lg:w-[560px] lg:h-[600px] xl:w-[800px] xl:h-[700px] relative">
+                        <div className="w-full h-[350px] md:w-[650px] md:h-[500px] lg:w-[560px] lg:h-[600px] xl:w-[800px] xl:h-[700px] relative">
                             <Image src="/assets/laptop.png" alt="HR Dashboard" width={1000} height={800} className="object-cover w-full h-full absolute lg:-left-16  xl:-left-48 lg:bottom-12 xl:bottom-20" />
                         </div>
                     </motion.div>
 
 
-                    <Link href="/contact" className="mx-auto ml-20  block lg:hidden">
+                    <Link href="/contact" className="mx-auto ml-20 md:ml-60 md:mt-6 mt-1  block lg:hidden ">
                             <Button className="bg-[#0D9488] hover:bg-[#0F766E]  text-white rounded-lg px-8 py-6 text-base shadow-lg shadow-teal-500/20">
                                 Start Your Free Trial
                             </Button>

@@ -46,21 +46,21 @@ export default function CTASection() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-medium text-accent">
+                        <h2 className="text-2xl md:text-3xl  lg:text-4xl font-medium text-accent">
                             The New Standard
                         </h2>
-                        <h3 className="text-2xl sm:text-4xl font-bold lg:text-5xl text-primary-foreground my-4 ml-20">
+                        <h3 className="text-2xl md:text-3xl font-bold lg:text-5xl text-primary-foreground lg:my-4 my-2 ml-20">
                             In Verifiable
                         </h3>
-                        <p className="text-2xl sm:text-4xl font-medium lg:text-4xl text-accent mt-2 ml-12">
+                        <p className="text-2xl md:text-3xl font-medium lg:text-4xl text-accent mt-2 ml-12">
                             Workforce Management
                         </p>
 
-                        <p className="mt-6 text-sm text-accent leading-relaxed max-w-md">
+                        <p className="mt-6 text-sm text-accent leading-relaxed lg:max-w-md w-full">
                            Duty Hour App brings integrity and automation to your HR processes. Our dual-validation system ensures every minute is accounted for, eliminating manual data entry and risk.
                         </p>
 
-                        <div className="mt-6">
+                        <div className="mt-6 ">
                                 <p className="text-sm font-semibold text-accent mb-3">Download Now</p>
                             <div className="flex flex-wrap gap-3">
                                 {/* App Store Button */}
@@ -99,7 +99,7 @@ export default function CTASection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className="bg-white rounded-xl max-w-[480px] shadow-xl border border-gray-100 p-6 lg:p-12"
+                        className="bg-white rounded-xl lg:max-w-[480px] w-full shadow-xl border border-gray-100 p-6 lg:p-12"
                     >
                         {/* Measurable Impact Header */}
                         <div className="flex items-center gap-4 mb-6">
