@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function MobileCheckInSection() {
     return (
-        <section className="py-20 bg-white">
+        <section className="lg:py-20 py-10 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <motion.div
@@ -13,12 +13,12 @@ export default function MobileCheckInSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
-                    className="mb-12"
+                    className="lg:mb-12 mb-4"
                 >
-                    <h2 className="text-3xl sm:text-4xl font-bold text-accent">
+                    <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-accent">
                         Your Office, In Their Pocket. Secure
                     </h2>
-                    <h3 className="text-2xl sm:text-3xl text-center max-w-2xl font-bold text-accent-foreground mt-2">
+                    <h3 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center max-w-2xl font-bold text-accent-foreground lg:mt-2">
                         Mobile Check-In
                     </h3>
                 </motion.div>
@@ -34,8 +34,24 @@ export default function MobileCheckInSection() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="relative flex justify-center"
                     >
-                        <div className="w-[1000px] h-[800px] relative">  <Image src="/assets/mobile-check.png" alt="Mobile Check-in" width={1000} height={800} className="object-contain w-full h-full" /></div>
+                        <div className="w-[1000px] lg:h-[800px] md:h-[600px] h-[400px] relative">  <Image src="/assets/mobile-check.png" alt="Mobile Check-in" width={1000} height={800} className="object-contain w-full h-full" /></div>
                     </motion.div>
+
+
+                    <div className="block lg:hidden mt-4">
+                    <div className="flex justify-between  items-center">
+                            
+                                <div className="">
+                                    <div className=" lg:text-4xl text-2xl font-bold text-accent">12.0k+</div>
+                                    <div className="text-sm text-accent">Employees Managed</div>
+                                </div>
+                                <div className="">
+                                    <div className=" lg:text-4xl text-2xl font-bold text-accent">42.0k+</div>
+                                    <div className="text-sm text-accent">Employee Overview</div>
+                                </div>
+                            </div>  
+                           
+                    </div>
 
 
                     {/* Left - Stats */}
@@ -47,13 +63,13 @@ export default function MobileCheckInSection() {
                         className="space-y-8"
                     >
                         <div className="flex justify-between  items-center">
-                            <div className="relative">
+                            <div className="relative lg:block hidden">
                                 <div className="absolute bottom-36">
-                                    <div className="text-4xl font-bold text-accent">12.0k+</div>
+                                    <div className=" lg:text-4xl text-2xl font-bold text-accent">12.0k+</div>
                                     <div className="text-sm text-accent">Employees Managed</div>
                                 </div>
                                 <div className="absolute left-16">
-                                    <div className="text-4xl font-bold text-accent">42.0k+</div>
+                                    <div className=" lg:text-4xl text-2xl font-bold text-accent">42.0k+</div>
                                     <div className="text-sm text-accent">Employee Overview</div>
                                 </div>
                             </div>
@@ -67,7 +83,7 @@ export default function MobileCheckInSection() {
                                     transition={{ duration: 0.5, delay: 0.4 }}
                                     className=""
                                 >
-                                    <div className=" max-w-xl ">
+                                    <div className=" lg:max-w-xl max-w-lg mt-4 lg:mt-0 ">
                                         <p className="text-sm text-accent leading-relaxed">
                                         The employee experience is seamless. Our intuitive mobile app manages secure, dual-factor authentication (geo-fencing + Wi-Fi) on the go, ensuring accurate and hassle-free attendance logging every time.
                                     </p>
