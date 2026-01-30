@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import PrecisionAttendance from "./PrecisionAttendance";
 import DualFactor from "./DualFactor";
@@ -16,16 +16,16 @@ export default function ServicesContent() {
       <DualFactor />
 
       {/* Work-Life Balance Tools Section */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-10 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-12"
+            className="text-center lg:mb-12 mb-6"
           >
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-accent max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-accent max-w-4xl mx-auto">
               Get essential insights & powerful tools for work-life balance
             </h2>
             <p className="mt-4 text-sm sm:text-base text-accent max-w-3xl mx-auto">
@@ -72,8 +72,8 @@ export default function ServicesContent() {
               transition={{ duration: 0.6 }}
               className="space-y-8"
             >
-              <div className="flex items-center gap-6 shadow-2xl  border-b-2 border-r-4 border-[#4E9DAB] rounded-2xl p-4 bg-white hover:shadow-lg transition-shadow">
-                <div>
+              <div className="md:flex items-center gap-6 shadow-2xl  border-b-2 border-r-4 border-[#4E9DAB] rounded-2xl p-4 bg-white hover:shadow-lg transition-shadow">
+                <div className="">
                   {" "}
                   <Image
                     src="/assets/work-life2.png"
@@ -126,7 +126,7 @@ export default function ServicesContent() {
       </section>
 
       {/* Download App Banner */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-linear-to-r from-primary to-primary-foreground rounded-2xl h-[398px] p-10">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-linear-to-r from-primary to-primary-foreground  lg:h-[397px] p-10 mb-10">
         <div className="">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Text Content */}
@@ -142,9 +142,19 @@ export default function ServicesContent() {
               </h2>
               <p className="text-sm  mb-8 text-white">
                 Get the power of accurate time tracking and compliance
-                on-the-go, ensuring <br /> save-ins sources with one-tap
+               , <br /> ensuring  save-ins sources with one-tap
                 logging.
               </p>
+              <div className="lg:hidden block">
+                <Image
+                  src="/assets/service-mobile.png"
+                  alt="Mobile Mockup"
+                  width={500}
+                  height={500}
+                  className="object-cover "
+                />
+              </div>
+
               <div>
                 <h4 className="text-lg font-semibold mb-4 text-white">
                   Download Now
@@ -185,23 +195,25 @@ export default function ServicesContent() {
             </motion.div>
 
             {/* Mobile Mockups */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="relative flex justify-center items-center gap-6"
-            >
-              <div className="w-[500px] h-[500px] overflow-hidden absolute -top-30 left-0">
-                <Image
-                  src="/assets/service-mobile.png"
-                  alt="Mobile Mockup"
-                  width={500}
-                  height={500}
-                  className="object-cover"
-                />
-              </div>
-            </motion.div>
+            <div className="lg:block hidden">
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="relative flex justify-center items-center gap-6"
+              >
+                <div className="w-[500px] h-[500px] overflow-hidden absolute lg:-top-30 lg:-left-16 xl:left-0">
+                  <Image
+                    src="/assets/service-mobile.png"
+                    alt="Mobile Mockup"
+                    width={500}
+                    height={500}
+                    className="object-cover "
+                  />
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>

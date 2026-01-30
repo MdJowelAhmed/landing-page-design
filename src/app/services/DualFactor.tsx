@@ -51,7 +51,7 @@ export default function DualFactor() {
     };
 
     return (
-        <section className="py-20 bg-white">
+        <section className="lg:py-20 py-10 bg-white">
             <section className="max-w-7xl mx-auto rounded-2xl py-6 lg:py-12 bg-gradient-to-b from-cyan-50 to-white">
                 <div className=" px-4 sm:px-6 lg:px-8">
                     <motion.div
@@ -75,7 +75,7 @@ export default function DualFactor() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+                        className="grid sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 gap-4"
                     >
                         {validationSteps.map((step, index) => (
                             <motion.div
@@ -96,7 +96,7 @@ export default function DualFactor() {
                                         </div>
                                     </motion.div>
                                     <div className="p-6">
-                                        <h3 className={`text-lg sm:text-xl font-bold mb-3 transition-colors duration-300 ${hoveredIndex === index ? 'text-white' : 'text-gray-900'}`}>
+                                        <h3 className={`text-lg sm:text-xl font-bold lg:mb-3 transition-colors duration-300 ${hoveredIndex === index ? 'text-white' : 'text-gray-900'}`}>
                                             {step.title}
                                         </h3>
                                         <p className={`text-sm leading-relaxed transition-colors duration-300 ${hoveredIndex === index ? 'text-white' : 'text-gray-600'}`}>
