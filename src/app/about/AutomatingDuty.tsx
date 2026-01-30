@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const AutomatingDuty = () => {
   return (
-    <section className="py-16 sm:py-24 bg-gradient-to-br from-cyan-50 via-teal-50 to-white relative overflow-hidden">
+    <section className="py-10 sm:py-24 bg-gradient-to-br from-cyan-50 via-teal-50 to-white relative overflow-hidden ">
       {/* Decorative background elements */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-teal-100 rounded-full opacity-20 blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-cyan-100 rounded-full opacity-20 blur-3xl"></div>
@@ -22,18 +22,18 @@ const AutomatingDuty = () => {
             transition={{ duration: 0.6 }}
             className="col-span-7 "
           >
-            <h2 className="text-xl sm:text-2xl lg:text-3xl w-5xl font-bold text-accent mb-6 leading-tight  ">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl w-5xl font-bold text-accent mb-6 leading-tight wrap w-full md:max-w-xl lg:w-full">
               Automating Duty-Hour Tracking to Empower Tomorrow’s Physicians
             </h2>
 
-            <p className="text-lg text-accent mb-10 leading-relaxed">
+            <p className="text-lg text-accent mb-10 leading-relaxed wrap w-full md:max-w-xl lg:w-full">
               Secure, AI-driven work-hour logging that frees residents and
               fellows to focus on patient care—and protects their well-being and
               your accreditation.
             </p>
 
             {/* Features Row */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 mb-12">
               <div className="flex items-start gap-3">
                 <div className="w-10 h-10 rounded-full  flex items-center justify-center 0">
                   {/* <svg
@@ -118,7 +118,7 @@ const AutomatingDuty = () => {
           >
             {/* Decorative dotted arc */}
             <div className="absolute top-1 -right-3 w-48 h-48 border-2 border-dashed border-primary rounded-full opacity-60"></div>
-            <div className="absolute -top-6 -right-8 w-60 h-60 border-2 border-dashed border-primary-foreground rounded-full opacity-60"></div>
+            <div className="absolute -top-6 -right-8  w-60 h-60 border-2 border-dashed border-primary-foreground rounded-full opacity-60"></div>
 
             <div className="bg-white rounded-3xl shadow-2xl p-4 lg:p-5 relative">
               <div className="flex items-start justify-between mb-">
@@ -156,7 +156,7 @@ const AutomatingDuty = () => {
               </div>
 
               {/* Next Risk Section */}
-              <div className="mb-8 flex items-center justify-between">
+              <div className="lg:mb-8 mb-4 flex items-center justify-between">
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="text-sm font-semibold text-gray-700 block mb-2">
