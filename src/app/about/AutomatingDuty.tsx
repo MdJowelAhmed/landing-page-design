@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 const AutomatingDuty = () => {
   return (
-    <section className="py-10 sm:py-24 bg-gradient-to-br from-cyan-50 via-teal-50 to-white relative overflow-hidden ">
+    <section className="py-10 sm:py-20 bg-gradient-to-br from-cyan-50 via-teal-50 to-white relative overflow-hidden ">
       {/* Decorative background elements */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-teal-100 rounded-full opacity-20 blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-cyan-100 rounded-full opacity-20 blur-3xl"></div>

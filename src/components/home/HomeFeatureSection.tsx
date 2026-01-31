@@ -17,23 +17,25 @@ export default function HomeFeatureSection() {
 
 
                         {/* Main Heading Group */}
-                        <div className=" flex flex-col items-center mt-10">
+                        <div className=" flex flex-col items-center xl:mt-10">
                             <h2 className="lg:text-3xl font-medium text-accent">Total Control</h2>
 
                         </div>
-                        <div className="flex justify-between w-96 lg:w-[500px] items-center  ">
+                        <div className="flex justify-between  w-96 lg:w-[450px] xl:w-[500px] items-center  ">
                             {/* Top Stat */}
                             <div className="flex flex-col">
-                                <h3 className="lg:text-4xl font-bold text-accent">12.0k+</h3>
+                                <h3 className="text-2xl lg:text-3xl font-bold text-accent">12.0k+</h3>
                                 <p className="text-accent  text-sm">Employees Managed</p>
                             </div>
-                            <div className="flex flex-col gap-2">
+
+                            
+                            <div className="flex flex-col gap-2 mt-0 lg:mt-4 xl:mt-0">
                                 <h2 className="lg:text-2xl font-bold text-accent-foreground">Instant Setup</h2>
-                                <h2 className="lg:text-2xl font-bold text-accent">Zero Attendance Fraud</h2>
+                                <h2 className="lg:text-2xl xl:font-bold font-medium text-accent">Zero Attendance Fraud</h2>
                             </div>
                         </div>
 
-                        <div className="md:flex justify-between w-96 md:w-[570px] items-center md:ml-20 gap-6 lg:gap-10 ">
+                        <div className="md:flex justify-between w-96 lg:w-[500px] xl:w-[570px] items-center md:ml-20 gap-6 lg:ml-0 xl:gap-10 ">
                             {/* Bottom Stat */}
                             <div className="hidden lg:block">
                                 <div className="flex flex-col mb-2  lg:mb-0">
@@ -72,18 +74,18 @@ export default function HomeFeatureSection() {
 
                             {/* Dashboard Image Mockup */}
                             <div className="  ">
-                                <Image src="/assets/dashboard.png" alt="Dashboard" width={800} height={200} className="w-full h-full object-cover" />
+                                <Image src="/assets/dashboard.png" alt="Dashboard" width={800} height={300} className="w-full h-full object-cover" />
                             </div>
                             {/* CTA Button "Cutout" */}
 
                             <Button
                                 size="lg"
-                                className=" hidden lg:block bg-gradient-to-r from-primary to-primary-foreground text-white px-4 lg:px-5 py-3 lg:py-6 lg:h-12 h-10 font-bold rounded-lg shadow-lg absolute bottom-12 right-12  md:-right-2"
+                                className=" hidden md:block bg-gradient-to-r from-primary to-primary-foreground text-white px-4 lg:px-5 py-3 lg:py-6 lg:h-12 h-10 font-bold rounded-lg shadow-lg absolute xl:bottom-12 lg:bottom-10  xl:right-2  lg:-right-8 right-6  md:-right-2 "
                             >
                                 Start Your Free Trial
                             </Button>
 
-                            <div className=" block lg:hidden absolute bottom-4 right-2 text-white md:-right-2">
+                            <div className=" block md:hidden absolute bottom-4 right-2 text-white md:-right-2">
                                 <Button className="bg-gradient-to-r from-primary to-primary-foreground text-white px-4 lg:px-5 py-2 lg:py-6 lg:h-12 h-8 font- rounded-lg shadow-lg">
                                     Free Trial
                                 </Button>

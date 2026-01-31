@@ -9,7 +9,7 @@ import { FaAnglesDown } from "react-icons/fa6";
 
 export default function HeroSection() {
     return (
-        <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-[]">
+        <section className="pt-10  relative min-h-[90vh] flex items-center overflow-hidden bg-[]">
             {/* Decorative top bar */}
             <div className="absolute top-0 right-0 w-1/2 h-2 " />
 
@@ -30,6 +30,7 @@ export default function HeroSection() {
                             <span className="text-accent-foreground font-bold ml-10 lg:ml-16 my-4">Your Control</span>
                             <br />
                             <span className="text-accent">Perfected Attendance</span>
+                            
                         </h1>
 
                         <div className="flex justify-between items-center gap-5 ">
@@ -66,9 +67,34 @@ export default function HeroSection() {
 
 
 
-                            <div className="text-center">
+                            <div className="text-center hidden md:block">
                                 <div className="text-3xl font-bold text-accent">34.0k+</div>
                                 <div className="text-xs text-accent">Attendance Records Processed</div>
+                            </div>
+
+                            <div className="block md:hidden">
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ duration: 0.5, delay: 0.6 }}
+                                    className=" gap-2 text-accent cursor-pointer hover:text-accent-foreground transition-colors"
+                                >
+
+                                    <div
+
+                                        className="bg-white shadow-lg rounded-full p-5 mb-3"
+                                    >
+
+                                        <motion.div
+                                            animate={{ y: [-2, 8, -2] }}
+                                            transition={{ duration: 1.5, repeat: Infinity }}
+                                        >
+                                            <FaAnglesDown className="w-10 h-10 text-blue-700" />
+                                        </motion.div>
+                                    </div>
+
+                                    <span className="text-sm font-medium mt-4">Learn More</span>
+                                </motion.div>
                             </div>
                         </div>
 
@@ -79,40 +105,49 @@ export default function HeroSection() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.5 }}
-                            className="lg:mt-8 mt-4 flex flex-wrap lg:gap-8 gap-4 justify-end"
+                            className="lg:mt-8 mt-6 flex flex-wrap lg:gap-8 gap-4 justify-end my-6"
                         >
 
                             <div
                                 className="lg:w-[350px] w-full flex justify-between items-center">
-                                <div className="text-center">
+                                <div className="text-center ">
                                     <div className="text-3xl font-bold text-accent">12.0k+</div>
                                     <div className="text-xs text-accent">Employees Managed</div>
                                 </div>
 
 
                                 {/* Learn More */}
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.5, delay: 0.6 }}
-                                    className=" gap-2 text-accent cursor-pointer hover:text-accent-foreground transition-colors"
-                                >
-
-                                    <div
-                                        
-                                        className="bg-white shadow-lg rounded-full p-5 mb-3"
+                                <div className="hidden md:block">
+                                    <motion.div
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ duration: 0.5, delay: 0.6 }}
+                                        className=" gap-2 text-accent cursor-pointer hover:text-accent-foreground transition-colors"
                                     >
 
-                                       <motion.div
-                                        animate={{ y: [-2, 8, -2] }}
-                                        transition={{ duration: 1.5, repeat: Infinity }}
-                                       >
-                                        <FaAnglesDown className="w-10 h-10 text-blue-700" />
-                                       </motion.div>
-                                    </div>
+                                        <div
 
-                                    <span className="text-sm font-medium mt-4">Learn More</span>
-                                </motion.div></div>
+                                            className="bg-white shadow-lg rounded-full p-5 mb-3"
+                                        >
+
+                                            <motion.div
+                                                animate={{ y: [-2, 8, -2] }}
+                                                transition={{ duration: 1.5, repeat: Infinity }}
+                                            >
+                                                <FaAnglesDown className="w-10 h-10 text-blue-700" />
+                                            </motion.div>
+                                        </div>
+
+                                        <span className="text-sm font-medium mt-4">Learn More</span>
+                                    </motion.div>
+                                </div>
+
+                                <div className="text-center block md:hidden">
+                                    <div className="text-3xl font-bold text-accent">34.0k+</div>
+                                    <div className="text-xs text-accent">Attendance Records Processed</div>
+                                </div>
+
+                            </div>
                         </motion.div>
 
 
@@ -132,11 +167,11 @@ export default function HeroSection() {
                                 <div className="w-full h-full rounded-[32px] overflow-hidden">
                                     {/* Phone Screen Content */}
                                     <Image src="/hero.png" alt="Phone Screen" fill
-                                    className="object-cove h-full w-full" />
+                                        className="object-cove h-full w-full" />
                                 </div>
                             </div>
 
-                          
+
                         </div>
                     </motion.div>
                 </div>
@@ -148,11 +183,11 @@ export default function HeroSection() {
                     transition={{ duration: 0.5, delay: 0.7 }}
 
                 >
-  <div className="lg:mt-10 mt-4 text-center lg:text-left  max-w-4xl">
-                                <p className="text-sm text-accent text-justify md:text-start leading-relaxed">
-                                    Take command of your institution`s attendance. The Duty Hour App provides business admins with a powerful HRM dashboard, enabled by geo-fenced and Wi-Fi-verified check-ins. Ensure every minute counts, manage employees effortlessly, and secure your operations with unparalleled accuracy.
-                                </p>
-                            </div>
+                    <div className="lg:mt-10 mt-4 text-center lg:text-left  max-w-4xl">
+                        <p className="text-sm text-accent text-justify md:text-start leading-relaxed">
+                            Take command of your institution`s attendance. The Duty Hour App provides business admins with a powerful HRM dashboard, enabled by geo-fenced and Wi-Fi-verified check-ins. Ensure every minute counts, manage employees effortlessly, and secure your operations with unparalleled accuracy.
+                        </p>
+                    </div>
                 </motion.div>
             </div>
         </section>
