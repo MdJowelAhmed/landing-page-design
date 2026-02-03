@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const OurTeam = () => {
   const tags = ["GME Operations", "Resident Well-Being", "UX & Compliance"];
@@ -24,8 +25,8 @@ const OurTeam = () => {
               </h2>
               {/* Image placeholder on left side */}
               <div className="mt-8 w-full h-96 bg-primary rounded-xl flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center text-primary-foreground">
-                  <div className="text-center">
+              
+                  {/* <div className="text-center">
                     <svg
                       className="w-24 h-24 mx-auto mb-4"
                       fill="none"
@@ -40,8 +41,18 @@ const OurTeam = () => {
                       />
                     </svg>
                     <p className="text-sm">Team Member Image</p>
-                  </div>
-                </div>
+                  </div> */}
+
+                  <Image
+                    src="/assets/about/owner.jpg"
+                    alt="Mark Bolden"
+                    width={400}
+                    height={400}
+                    quality={100}
+                   
+                    className="object-cover w-full h-full"
+                  />
+              
               </div>
             </motion.div>
 
@@ -117,7 +128,7 @@ const OurTeam = () => {
               {/* Start Your Free Trial Button */}
               <motion.a
                 target="_blank"
-                href="https://business.dutyhourapp.com"
+                href=" https://business.dutyhourapp.com/auth/login"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -134,6 +145,7 @@ const OurTeam = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="flex justify-start items-center gap-2 px-4 py-[6px] bg-secondary text-white rounded-lg hover:bg-secondary transition-colors"
+                    onClick={() => window.open(" https://apps.apple.com/ca/app/duty-hour-app/id6753148379", "_blank")}
                   >
                     <svg
                       className="w-6 h-6"
@@ -154,6 +166,7 @@ const OurTeam = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="flex justify-start items-center gap-2 px-4 py-[6px] bg-secondary text-white rounded-lg hover:bg-secondary transition-colors"
+                    onClick={() => window.open("https://play.google.com/store/apps/details?id=com.duty.users&hl=en", "_blank")}
                   >
                     <svg
                       className="w-6 h-6"

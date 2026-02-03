@@ -160,7 +160,7 @@ export default function ServicesContent() {
                   Download Now
                 </h4>
                 <div className="flex flex-wrap gap-3">
-                  <Link href="#" className="inline-block">
+                  <Link href=" https://apps.apple.com/ca/app/duty-hour-app/id6753148379" target="_blank" className="inline-block">
                     <div className="flex items-center gap-2 bg-secondary text-white px-5 py-2 rounded-lg hover:bg-secondary transition-colors">
                       <svg
                         className="w-7 h-7"
@@ -175,7 +175,7 @@ export default function ServicesContent() {
                       </div>
                     </div>
                   </Link>
-                  <Link href="#" className="inline-block">
+                  <Link href="https://play.google.com/store/apps/details?id=com.duty.users&hl=en" target="_blank" className="inline-block">
                     <div className="flex items-center gap-2 bg-secondary text-white px-5 py-2 rounded-lg hover:bg-secondary transition-colors">
                       <svg
                         className="w-7 h-7"

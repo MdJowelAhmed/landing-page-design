@@ -28,7 +28,7 @@ export default function HomeFeatureSection() {
                                 <p className="text-accent  text-sm">Employees Managed</p>
                             </div>
 
-                            
+
                             <div className="flex flex-col gap-2 mt-0 lg:mt-4 xl:mt-0">
                                 <h2 className="lg:text-2xl font-bold text-accent-foreground">Instant Setup</h2>
                                 <h2 className="lg:text-2xl xl:font-bold font-medium text-accent">Zero Attendance Fraud</h2>
@@ -80,13 +80,23 @@ export default function HomeFeatureSection() {
 
                             <Button
                                 size="lg"
-                                className=" hidden md:block bg-gradient-to-r from-primary to-primary-foreground text-white px-4 lg:px-5 py-3 lg:py-6 lg:h-12 h-10 font-bold rounded-lg shadow-lg absolute xl:bottom-12 lg:bottom-10  xl:right-2  lg:-right-8 right-6  md:-right-2 "
+                                onClick={() =>
+                                    window.open("https://business.dutyhourapp.com/auth/login", "_blank")
+                                }
+                                className="hidden md:flex items-center justify-center
+    bg-gradient-to-r from-primary to-primary-foreground
+    text-white font-bold rounded-lg shadow-lg
+    h-10 lg:h-12 px-4 lg:px-5
+    absolute xl:bottom-12 lg:bottom-10 xl:right-2 lg:-right-8 right-6 md:-right-2"
                             >
                                 Start Your Free Trial
                             </Button>
 
+
                             <div className=" block md:hidden absolute bottom-4 right-2 text-white md:-right-2">
-                                <Button className="bg-gradient-to-r from-primary to-primary-foreground text-white px-4 lg:px-5 py-2 lg:py-6 lg:h-12 h-8 font- rounded-lg shadow-lg">
+                                <Button
+                                    onClick={() => window.open("https://business.dutyhourapp.com/auth/login", "_blank")}
+                                    className="bg-gradient-to-r from-primary to-primary-foreground text-white px-4 lg:px-5 py-2 lg:py-6 lg:h-12 h-8 font- rounded-lg shadow-lg">
                                     Free Trial
                                 </Button>
                             </div>

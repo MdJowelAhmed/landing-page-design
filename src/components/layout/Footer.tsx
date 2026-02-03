@@ -61,7 +61,8 @@ export default function Footer() {
                         <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                             {/* App Store Button */}
                             <a
-                                href="#"
+                                href=" https://apps.apple.com/ca/app/duty-hour-app/id6753148379"
+                                target="_blank"
                                 className="inline-flex items-center border px-4 py-2 bg-[#1E293B] text-white rounded-lg hover:bg-[#0F172A] transition-colors"
                             >
                                 <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
@@ -74,7 +75,8 @@ export default function Footer() {
                             </a>
                             {/* Google Play Button */}
                             <a
-                                href="#"
+                                href="https://play.google.com/store/apps/details?id=com.duty.users&hl=en"
+                                target="_blank"
                                 className="inline-flex items-center px-4 py-2 border bg-[#1E293B] text-white rounded-lg hover:bg-[#0F172A] transition-colors"
                             >
                                 <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
